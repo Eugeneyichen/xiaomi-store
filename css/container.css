@@ -1,0 +1,22 @@
+.container{
+	width: 1266px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+.clearfix{
+	*zoom:1;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+ul li{
+	display: none;
+}
