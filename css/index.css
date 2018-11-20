@@ -707,17 +707,28 @@
 	height: 180px;
 	margin-bottom: 32px;
 }
-.video .video-item {
+.video .video-item a{
 	position: relative;
+	text-align: center;
+}
+.video .video-item a:hover i{
+	background: #ff6700;
+	color: #fff;
+	border-color: #ff6700;
 }
 .video-item i{
-	width: 20px;
-	height: 20px;
+	width: 36px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 30px;
 	border:1px solid #fff;
 	position: absolute;
 	left: 20px;
-	bottom: 10px;
-	color: red;
+	bottom: 45px;
+	color: #fff;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.5);
 }
 .video-item h3{
 	font-size: 14px;
