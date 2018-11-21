@@ -540,7 +540,7 @@
 	padding-bottom: 40px;
 }
 .main{
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 	background-color: #f5f5f5;
 }
 .main .container .hd .more .more-hd{
@@ -700,7 +700,14 @@
 	background: #fff;
 } 
 .video-hd{
-	text-align: center;
+	text-align: center;	
+}
+.video-item{
+	transition: box-shadow 0.3s linear,transform 0.3s linear;
+}
+.video-item:hover{
+	box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+	transform:translateY(-2px);
 }
 .video-item img{
 	width: 100%;
@@ -741,10 +748,208 @@
 	margin-top: 36px;
 }
 .footer{
-	height: 277px;
-	background-color: purple;
+	background-color: #fff;
+}
+.footer .service{
+	padding: 32px 0px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.footer .service-item{
+	float: left;
+	width: 20%;
+	height: 24px;
+	border-right: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	padding-left: 58px;
+}
+.footer .service-item:last-child{
+	border-right: none;
+}
+.footer .service-item a{
+	font-size: 16px;
+	color: #616161;
+}
+.footer .service-item a:hover{
+	color: #ff6700;
+}
+.footer .service-item a i{
+	font-size: 20px;
+	vertical-align: -2px;
+}
+.footer .links-item{
+	float: left;
+	padding: 40px 0px 43px;
+	box-sizing: border-box;
+	padding-right: 100px;
+}
+.footer .links-item dt{
+	font-size: 14px;
+	color: #424247;
+	padding-bottom: 30px;
+}
+.footer .links-item dt:nth-child(5){
+	border-right: 1px solid #e0e0e0;
+}
+.footer .links-item dd{
+	font-size: 10px;
+	color: #757575;
+	padding-bottom: 17px;
+}
+.footer .links-item dd:last-child{
+	padding-bottom: 0;
+}
+.footer .links-item dd a:hover{
+	color: #ff6700;
+}
+.footer .links-contact{
+	width: 246px;
+	height: 112px;
+	margin-left: 10px;
+	margin-top: 43px;
+	text-align: center;
+	float: right;
+	box-sizing: border-box;
+	border-left: 1px solid #e0e0e0;
+}
+.footer .links-contact .phone{
+	font-size: 20px;
+	color: #ff6700;
+	padding-bottom: 8px;
+	font-weight: bold;
+}
+.footer .links-contact .work-time{
+	font-size: 12px;
+	color: #7e7e7e;
+	padding-bottom: 5px;
+	
+}
+.footer .links-contact .work-des{
+	font-size: 12px;
+	color: #7e7e7e;
+	padding-bottom: 19px;
+}
+.footer .links-contact a{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #ff6700;
+	font-size: 12px;
+	color: #ff6700;
+
+}
+.footer .links-contact a:hover{
+	color: #fff;
+	background: #ff6700;
+}
+.footer .links-contact a i{
+	padding-right: 3px;
 }
 .end{
-	height: 148px;
-	background-color: tomato;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f5f5f5;
 }
+.end .info .logo{
+	float: left;
+	width: 57px;
+	height: 57px;
+	background: #ff6700;
+	background-image: url(../image/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right: 10px;
+}
+.end .info .sites{
+	float: left;
+	font-size: 10px;
+}
+.end .info .sites a:hover{
+	color: #ff6700;
+}
+.end .info .sites .nav-link a:hover{
+	color: #ff6700;
+}
+.end .info .sites .nav-link a{
+	color: #757575;
+}
+.end .info .sites .nav-link span{
+	color: #c0b0b0;
+}
+.end .info .icp{
+	color: #c2c2c0;
+	padding-top: 2px;
+}
+.end .info .decare{
+	color: #b9b9b9;
+	padding-top: 2px;
+}
+.end .info .link{
+	float: right;
+}
+.end .info .link img{
+	width: 82px;
+	height: 27px;
+}
+.end .slogan{
+	float: left;
+	padding-top: 35px;
+	padding-left: 482px;
+	height: 20px;
+}
+/*.lateral{
+	position: fixed;
+	top: 200px;
+	right:0;
+	width: 90px;
+	height: 95px;
+	background: #fff;
+	border:1px solid red;
+	text-align: center;
+	line-height: 100px;
+
+}*/
+.lateral-item-m{
+	position: fixed;
+	bottom: 447px;
+	right:0;
+	width: 90px;
+	height: 95px;
+	border:1px solid #f5f5f5;
+	text-align: center;
+	line-height: 100px;
+	background:#fff;
+}
+.lateral-item ul{
+
+}
+.lateral-item-m:nth-child(2){
+	position: fixed;
+	right: 0;
+	bottom:352px; 
+}
+.lateral-item-m:nth-child(3){
+	position: fixed;
+	right: 0;
+	bottom:257px; 
+}
+.lateral-item-m:nth-child(4){
+	position: fixed;
+	right: 0;
+	bottom:162px; 
+}
+.lateral-item-m:nth-child(5){
+	position: fixed;
+	right: 0;
+	bottom:57px; 
+}
+.lateral-item-s i{
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: -4px;
+}
+.lateral-item-m a:hover{
+	color: #ff6700;
+}
+
