@@ -1,0 +1,94 @@
+/*闪购顶部*/
+.top{
+	background: #333;
+}
+.top .cate-item{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+
+}
+.top .cate-item a{
+	font-size: 12px;
+	/*color: #b0b0b0;*/
+	margin: 0 0.5em;
+}
+.top .cate-item span{
+	color: #3c423c;
+}
+.top .cart{
+	float: right;
+	width: 120px;
+	height: 40px;
+	background: #424242;
+}
+.top .cart .cart-box a{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.top .cart .cart-box .icon-cart{
+	font-size: 20px;
+	vertical-align: -4px;
+}
+.top .cart .cart-box a:hover {
+	background: #fff;
+	color: #ff6700;
+}
+.user{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 16px;
+}
+.top .user .user-item{
+	display: inline-block;
+	float: left;
+}
+.top .user-item a{
+	margin: 0 0.5em;
+}
+.top .user-item span{
+	color: #3c423c;
+}
+
+/*搜索框*/
+.header{
+	height: 120px;
+	background: pink;
+}
+.header .logo{
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-top: 22px;
+	background: #ff6700;
+}
+.header .logo a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url(../image/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -9999em;
+}
+/*主体*/
+.home{
+	height: 960px;
+	background: tomato;
+}
+
+/*页尾*/
+.footer{
+	height: 264px;
+	background: aqua;
+}
+
+/*底部*/
+.end{
+	height: 183px;
+	background: purple;
+}
