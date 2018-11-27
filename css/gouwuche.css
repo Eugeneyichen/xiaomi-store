@@ -1,0 +1,83 @@
+/*头部begin*/
+.header{
+	height: 100px;
+	line-height: 100px;
+	background: #ffffff;
+	border-bottom: 2px solid #ff6700;
+}
+.header .nav{
+	width: 1224px;
+	height: 100%;
+	margin:0 auto;
+	background: #ffffff;
+}
+.header .logo{
+	width: 40px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.header .logo ul{
+	width: 80px;
+	height: 100px;
+}
+.header .logo ul li{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.header .logo ul li:hover{
+	margin-left: -40px;
+}
+.header h1{
+	float: left;
+	font-size: 28px;
+	margin-left: 5px;
+}
+.header .nav-left{
+	width: 40px;
+	height: 40px;
+}
+.header .nav-left img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: #ff6700;
+	margin-top: 30px;
+	margin-right: 46px;
+}
+.header .nav-right{
+	float: right;
+}
+.header .nav-right li{
+	float: left;
+}
+.header .nav-right a{
+	text-decoration: none;
+	color: #757575;
+	font-size: 12px;
+}
+.header span{
+	color: #e4ebf6;
+	margin:0px 5px;
+	font-size: 14px;
+}
+/*头部end*/
+/*热卖begin*/
+.hot{
+	height: 492px;
+	background: yellow;
+}
+/*热卖end*/
+/*主要begin*/
+.main{
+	height: 1374px;
+	background: green;
+}
+/*主要end*/
+/*尾部begin*/
+.footer{
+	height: 456px;
+	background: blue;
+}
+/*尾部end*/
