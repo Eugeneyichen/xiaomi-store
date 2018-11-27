@@ -11,9 +11,32 @@
 	margin:0 auto;
 	background: #ffffff;
 }
+.header .logo{
+	width: 40px;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+.header .logo ul{
+	width: 80px;
+	height: 100px;
+}
+.header .logo ul li{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+.header .logo ul li:hover{
+	margin-left: -40px;
+}
 .header h1{
 	float: left;
 	font-size: 28px;
+	margin-left: 5px;
+}
+.header .nav-left{
+	width: 40px;
+	height: 40px;
 }
 .header .nav-left img{
 	float: left;
