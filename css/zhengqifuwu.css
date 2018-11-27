@@ -32,51 +32,107 @@ body{
 /*头部begin*/
 .header{
 	height: 88px;
-	background: yellow;
-}
-.header .container{
-	width: 1236px;
-	height:100%;
-	margin: 0 auto;
-	background: red;
-}
-.header .logo{
-	height: 88px;
-	line-height: 88px;
-	width: 205px;
-	background: green;
-	/*float: left;*/
-	margin-right: 576px;
-}
-.header img{
-	float: left;
-	width: 40px;
-	height: 40px;
-	margin-top: 24px;
-	background: #ff6b02;
-	border-radius: 3px;
-	margin-right: 4px;
-}
-.header h1{
-	font-size: 24px;
+	background: #ffffff;
 }
 .header .nav{
-	width: 456px;
+	width: 1236px;
 	height: 88px;
+	line-height: 88px;
+	margin:0 auto;
+}
+.header .nav-left{
+	height: 88px;
+	width: 208px;
+	float: left;
+	margin-left: -332px;
+}
+.header .nav-left img{
+	width: 40px;
+	height: 40px;
+	background: #ff6b02;
+	float: left;
+	margin-top: 24px;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+.header .nav-left h1{
+	float: left;
+	font-size: 26px;
+}
+.header .nav-right{
+	width: 460px;
+	height: 100%;
 	float: right;
 }
-.header ul li{
+.header .nav-right li{
 	float: left;
+	margin-right: 44px;
 }
-.header .nav a{
+.header .nav-right li:last-child{
+	margin-right: 0px;
+}
+.header .nav-right li a{
+	font-size: 14px;
 	color: #5e5e5e;
 	text-decoration: none;
+}
+.header .nav-right li a:hover{
+	color: #ff6b02;
 }
 /*头部end*/
 /*热卖begin*/
 .hot{
 	height: 500px;
 	background: blue;
+	overflow: hidden;
+	position: relative;
+}
+.hot .lunbo{
+	width: 5400px;
+	height: 500px;
+	margin:0 auto;
+	margin-left: 0px;
+	animation: sport 5s linear infinite;
+}
+.hot .lunbo li{
+	width: 1350px;
+	height: 500px;
+	float: left;
+	list-style: none;
+}
+/*@keyframes sport{
+	from{
+		margin-left: 0px;
+	}
+	to{
+		margin-left: -4050px;
+	}
+}*/
+
+.hot .lunbo li span{
+	width: 36px;
+	height: 8px;
+	display: inline-block;
+	background: #716d6b;
+	position: absolute;
+	top: 0px;
+	list-style: 0px;
+}
+.hot .lunbo li:nth-child(1) span{
+	position: absolute;
+	top: 476px;
+	left: 616px;
+	background: white;
+}
+.hot .lunbo li:nth-child(2) span{
+	position: absolute;
+	top: 476px;
+	left: 660px;
+}
+.hot .lunbo li:nth-child(3) span{
+	position: absolute;
+	top: 476px;
+	left: 700px;
 }
 /*热卖end*/
 /*主要begin*/
