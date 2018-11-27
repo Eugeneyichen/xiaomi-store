@@ -1,0 +1,93 @@
+body{
+	min-width: 1349px;
+}
+/*顶部begin*/
+.top{
+	height: 40px;
+	line-height: 40px;
+	background: #333333;
+}
+.top ul{
+	width: 1236px;
+	margin:0 auto;
+}
+.top ul li{
+	float: left;
+}
+.top ul li a{
+	color: #b0b0b0;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bolder;
+}
+.top ul li a:hover{
+	color: white;
+}
+.top span{
+	color: #3b4042;
+	margin:0px 9px;
+	font-size: 12px;
+}
+/*顶部end*/
+/*头部begin*/
+.header{
+	height: 88px;
+	background: yellow;
+}
+.header .container{
+	width: 1236px;
+	height:100%;
+	margin: 0 auto;
+	background: red;
+}
+.header .logo{
+	height: 88px;
+	line-height: 88px;
+	width: 205px;
+	background: green;
+	/*float: left;*/
+	margin-right: 576px;
+}
+.header img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-top: 24px;
+	background: #ff6b02;
+	border-radius: 3px;
+	margin-right: 4px;
+}
+.header h1{
+	font-size: 24px;
+}
+.header .nav{
+	width: 456px;
+	height: 88px;
+	float: right;
+}
+.header ul li{
+	float: left;
+}
+.header .nav a{
+	color: #5e5e5e;
+	text-decoration: none;
+}
+/*头部end*/
+/*热卖begin*/
+.hot{
+	height: 500px;
+	background: blue;
+}
+/*热卖end*/
+/*主要begin*/
+.main{
+	height: 2568px;
+	background: orange;
+}
+/*主要end*/
+/*底部begin*/
+.footer{
+	height: 450px;
+	background: green;
+}
+/*底部end*/
