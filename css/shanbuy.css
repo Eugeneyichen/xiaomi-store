@@ -4,6 +4,7 @@ li{
 /*闪购顶部*/
 .top{
 	background-color: #333;
+	/*height: 50px;*/
 }
 .top .top-nav{
 	float: left;
@@ -49,9 +50,31 @@ li{
 	background: #fff;
 	color: red;
 }
+.cart-box{
+	position: relative;
+}
+.cart-drop{
+	position: absolute;
+	top:40px;
+	right: 0px;
+	display: inline-block;
+	width: 317px;
+	height: 98px;
+	line-height: 98px;
+	color: #424242;
+	font-size: 12px;
+	background: #fff;
+	text-align: center;
+	z-index: 999;
+	display: none;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+	transition: height 2s linear;
+}
+.cart .cart-box a:hover+.cart-drop{
+	display: block;
+	height: 98px;
 
-
-
+}
 .header{
 	height: 120px;
 }
@@ -71,7 +94,38 @@ li{
 	background-position: center center;
 	text-indent: -9999em;
 }
-
+.ca{
+	position: absolute;
+	top: 140px;
+	left: 148px;
+	z-index: 999;
+	width: 234px;
+	height: 460px;
+	padding: 20px 0 30px 0;
+	box-sizing: border-box;
+	background:#fff;
+	border:1px solid #ff6700;
+}
+.ca{
+	display: none;
+}
+.header-nav-item-sj a:hover+.ca{
+	display: block;
+}
+.ca .ca-item{
+	height: 42px;
+	line-height: 42px;
+	padding: 0 20px 0 30px;
+	font-size: 13px;
+	color: #424242;
+	cursor: pointer;
+}
+.ca .ca-item:hover{
+	background: #ff6700;
+}
+.ca .ca-item i{
+	float: right;
+}
 .header .header-nav{
 	float: left;
 	height: 100px;
@@ -81,6 +135,7 @@ li{
 .header .header-nav .header-nav-item{
 	float: left;
 	margin-right: 20px;
+	/*position: relative;*/
 }
 .header .header-nav .header-nav-item a{
 	font-size: 16px;
@@ -351,7 +406,6 @@ li{
 .col1 .product-item a .new-flog:hover{
 	background: #63b74a;
 }
-
 product-people
 /*页尾*/
 .footer{
