@@ -32,7 +32,7 @@
 .header h1{
 	float: left;
 	font-size: 28px;
-	margin-left: 5px;
+	margin-left: 45px;
 }
 .header .nav-left{
 	width: 40px;
@@ -66,13 +66,182 @@
 /*热卖begin*/
 .hot{
 	height: 492px;
-	background: yellow;
+	background: #f5f5f5;
+}
+.contain{
+	width: 1224px;
+	height: 100%;
+	margin:0 auto;
+}
+.hot .contain .contain-left{
+	width: 558px;
+	height: 100%;
+	float: left;
+	background: url(../image/gouwuche-people.png) no-repeat 125px center;
+}
+.hot .contain .contain-right{
+	width: 360px;
+	height: 100%;
+	float: right;
+	margin-right: 306px;
+}
+.hot .contain-right p:nth-child(1){
+	color: #b0b0b0;
+	font-size: 36px;
+	font-weight: bolder;
+	margin-top: 125px;
+}
+.hot .contain-right p:nth-child(2){
+	color: #b0b0b0;
+	font-size: 18px;
+	margin-top: 12px;
+}
+.hot .contain-right ul{
+	width: 360px;
+	height: 48px;
+	line-height: 48px;
+	margin-top: 26px;
+}
+.hot .contain-right ul li{
+	width: 170px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	border: 1px solid #ff6700;
+}
+.hot .contain-right ul li:nth-child(1){
+	background: #ff6700;
+	margin-right: 16px;
+}
+.hot .contain-right ul li:nth-child(1):hover{
+	background: #ed670c;
+}
+.hot .contain-right ul li:nth-child(1) a{
+	color: white;
+	text-decoration: none;
+}
+.hot .contain-right ul li:nth-child(2) a{
+	color: #ff6700;
+	text-decoration: none;
 }
 /*热卖end*/
 /*主要begin*/
 .main{
 	height: 1374px;
-	background: green;
+	background: #f5f5f5;
+}
+.main-name{
+	width: 1224px;
+	margin:0 auto;
+	position: relative;
+}
+.main .main-name li:nth-child(1){
+	width: 370px;
+	height: 2px;
+	background: #e0e0e0;
+	position: absolute;
+	left: 0px;
+	top: 20px;
+}
+
+.main h2{
+	width: 484px;
+	font-size: 28px;
+	color: #757575;
+	margin:0 auto;
+	text-align: center;
+}
+.main .main-name li:nth-child(3){
+	width: 370px;
+	height: 2px;
+	background: #e0e0e0;
+	position: absolute;
+	right: 0px;
+	top: 20px;	
+}
+.main .main-contain{
+	width: 1224px;
+	height: 1342px;
+	margin:0 auto;
+	background: #f5f5f5;
+	margin-top: 32px;
+}
+.main .main-contain .main-contain-b{
+	width: 236px;
+	height: 300px;
+	text-align: center;
+	background: #ffffff;
+	float: left;
+	position: relative;
+	margin-right: 11px;
+	margin-bottom: 12px;
+}
+.main .main-contain .main-contain-b:hover .gouwu{
+	opacity: 1;
+	border: 1px solid #ff6700;
+}
+.main .main-contain .main-contain-b:hover .suggest{
+	opacity: 0;
+}
+.main .main-contain .main-contain-b:nth-child(5),
+.main .main-contain .main-contain-b:nth-child(10),
+.main .main-contain .main-contain-b:nth-child(15),
+.main .main-contain .main-contain-b:nth-child(20){
+	margin-right: 0px;
+}
+.main .main-contain .main-contain-b img{
+	margin-top: 20px;
+}
+.main .main-contain .main-contain-list li:nth-child(1){
+	margin-top: 20px;
+}
+.main .main-contain .main-contain-list li:nth-child(1) a{
+	color: #333333;
+	text-decoration: none;
+	font-size: 14px;
+}
+.main .main-contain .main-contain-list li:nth-child(2){
+	color: #ff6700;
+	margin-top: 18px;
+	font-size: 14px;
+}
+.main .main-contain .main-contain-list li:nth-child(3){
+	width: 132px;
+	height: 24px;
+	margin-top: 26px;
+	margin-left: 50%;
+	position: absolute;
+	left: -66px;
+	bottom: 14px;
+	text-align: center;
+}
+.main .main-contain .main-contain-list li:nth-child(3):hover .gouwu{
+	opacity: 1;
+	background: #ff6700;
+	color: white;
+	transition: all 0.5s;
+}
+.main .main-contain .main-contain-list li:nth-child(3):hover .suggest{
+	opacity: 0;
+}
+.main .main-contain .main-contain-list li:nth-child(3) a{
+	text-decoration: none;
+	font-size: 14px;
+}
+.main .main-contain .main-contain-list .suggest{
+	color: #757575;
+}
+.main .main-contain .main-contain-list .gouwu{
+	display: inline-block;
+	width: 132px;
+	height: 36px;
+	color: #ff6700;
+	position: absolute;
+	top: -6px;
+	left: -1px;
+	opacity: 0;
+	padding-top: 5px;
+	box-sizing: border-box;
 }
 /*主要end*/
 /*尾部begin*/

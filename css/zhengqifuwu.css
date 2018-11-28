@@ -100,14 +100,14 @@ body{
 	float: left;
 	list-style: none;
 }
-/*@keyframes sport{
+@keyframes sport{
 	from{
 		margin-left: 0px;
 	}
 	to{
 		margin-left: -4050px;
 	}
-}*/
+}
 
 .hot .lunbo li span{
 	width: 36px;
@@ -147,3 +147,10 @@ body{
 	background: green;
 }
 /*底部end*/
+.bottom{
+	width: 146px;
+	height: 195px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+}
