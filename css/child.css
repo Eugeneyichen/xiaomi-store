@@ -1,5 +1,5 @@
 .container{
-	widows: 1226px;
+	width: 1226px;
 }
 .top{
 	background-color: #333;
@@ -251,15 +251,110 @@
 .header .search .search-text:focus ~ .search-hot-words{
 	display: none;
 }
+
+
+
 .home{
-	height: 620px;
-	background: aqua;
+	width: 100%;
+	/*height: 620px;*/
+	/*background: aqua;*/
+}
+.home a{
+display: block;
+box-sizing: border-box;		
+}
+.home a img{
+	width: 100%;
+	height: 100%;
 }
 
+
+
 .main{
-	height: 2067px;
-	background: #ff6700;
+	/*height: 2067px;*/
+	background: #f5f5f5;
 }
+.main .co1{
+	height: 2065px;
+	
+}
+.main .co1 h2{
+	font-size: 36px;
+	text-align: center;
+	padding: 24px 0 24px 0;
+	color: #333333;
+}
+.main .co1-item-on{
+	height: 435px;
+	/*background: pink;*/
+	margin-bottom: 14px;
+}
+.main .co1-item-on img{
+	float: left;
+	width: 850px;
+	height: 100%;
+}
+.main .co1-item-on .co1-dianche{
+	background: #fff;
+	float: left;
+	width: 375px;
+	height: 100%;
+	/*padding-left: 62px;*/
+	box-sizing: border-box;
+	padding: 93px 0px 67px 62px;
+}
+.main .co1-item-on .co1-dianche .co1-name a{
+	font-size: 32px;
+	color: #474747;
+}
+/*.main .co1-item-on .co1-dianche .co1-name{
+
+	padding-top: 95px;
+}*/
+.main .co1-item-on .co1-dianche .co1-jieshi{
+	padding-top: 15px;
+	font-size: 14px;
+	color:#707070;
+}
+.main .co1-item-on .co1-dianche .co1-price{
+	padding-top: 45px;
+	font-size: 24px;
+	color: #ff6700;
+}
+.main .co1-item-on .co1-dianche .co1-price span{
+	font-size: 11px;
+}
+.main .co1-item-on .co1-dianche .co1-know a{
+	font-size: 13px;
+	color: #707070;
+}
+.main .co1-item-on .co1-dianche .co1-know{
+	padding-top: 70px;
+}
+.main .co1 .co1-item .co1-item-down{
+	height: 483px;
+	/*background: purple;*/
+}
+.co1-item-left{
+	float: left;
+	width: 602px;
+	height: 483px;
+	background: pink;
+}
+.co1-item-right{
+	float: right;
+	width: 602px;
+	height: 483px;
+	background: pink;
+}
+co1-item-right
+.main .co2{
+	height: 1254px;
+	background: blue;
+}
+
+
+
 .footer{
 	background-color: #fff;
 }
