@@ -83,7 +83,6 @@ body{
 /*热卖begin*/
 .hot{
 	height: 500px;
-	background: blue;
 	overflow: hidden;
 	position: relative;
 }
@@ -137,7 +136,7 @@ body{
 /*热卖end*/
 /*主要begin*/
 .main{
-	height: 2546px;
+	height: 2460px;
 }
 .main .container{
 	width: 1244px;
@@ -149,18 +148,21 @@ body{
 	height: 560px;
 	margin-bottom: 60px;
 }
-.main .title1 .nav,.main .title2 .nav{
+.main .title1 .nav,.main .title2 .nav,
+.main .title3 .nav,.main .title4 .nav{
 	height: 198px;
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
 }
-.main .title1 .nav h2{
+.main .title1 .nav h2,.main .title2 .nav h2,
+.main .title3 .nav h2,.main .title4 .nav h2{
 	font-size: 30px;
 	color: #5e5e5e;
 	margin-top: 66px;
 }
-.main .title1 .nav p,.main .title2 .nav p{
+.main .title1 .nav p,.main .title2 .nav p,
+.main .title3 .nav p,.main .title4 .nav p{
 	font-size: 18px;
 	color: #a1a1a1;
 	margin-top:14px;
@@ -227,34 +229,58 @@ body{
 	transition: all 3s;
 	cursor: pointer;
 }
+/*标题2*/
 .main .title2{
 	width: 100%;
 	height: 560px;
-	/*background: orange;*/
 }
 .main .title2 .nav h2{
 	font-size: 30px;
 	color: #5e5e5e;
 	margin-top: 52px;
 }
-.main .title2 ul{
+.main .title2 .shoufengqin{
 	width: 100%;
 	height: 312px;
 	overflow: hidden;
+	position: relative;
 }
-.main .title2 ul li{
+.main .title2 .shoufengqin>li{
 	width: 207px;
+	height: 100%;
 	float: left;
 	position: relative;
 }
-.main .title2 ul:hover li{
+#last .son1,#last .son2{
+	width: 414px;
+	background: red;
+}
+#last .son2 span{
+	margin-top: -50px;
+	margin-left: 100px;
+}
+#last .son2 p:nth-child(2){
+	top: 155px;
+	left: 142px;
+}
+#last .son2 p:nth-child(3){
+	top: 206px;
+}
+.main .title2 .shoufengqin:hover li{
 	width: 207px;
 	transition: all 1s;
 }
-.main .title2 ul li:hover{
+.main .title2 .shoufengqin li:hover{
 	width: 414px;
 }
-.main .title2 ul span{
+.main .title2 .shoufengqin ul .son1{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.main .title2 .shoufengqin ul span{
 	display: block;
 	text-align: center;
 	width: 72px;
@@ -266,29 +292,152 @@ body{
 	list-style: 0px;
 	border-radius: 36px;
 }
-.main .title2 ul span img{
-	margin-top: 13px;
-}
-.main .title2 ul li p:nth-child(3){
+.main .title2 .shoufengqin ul .son2{
 	position: absolute;
 	top: 0px;
-	list-style: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
 }
+.main .title2 .shoufengqin ul span img{
+	margin-top: 13px;
+}
+.main .title2 .shoufengqin .son2 p:nth-child(2){
+	position: absolute;
+	top: 200px;
+	left: 48px;
+	color: white;
+}
+.main .title2 .shoufengqin .son2 p:nth-child(3){
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	position: absolute;
+	top: 208px;
+	opacity: 0;
+}
+.main .title2 .shoufengqin li:hover span{
+	margin-top: -50px;
+	margin-left: 100px;
+}
+.main .title2 .shoufengqin li:hover p:nth-child(2){
+	top: 155px;
+	left: 142px;
+}
+.main .title2 .shoufengqin li:hover p:nth-child(3){
+	opacity: 1;
+	top: 206px;
+}
+.main .title2 .shoufengqin li:hover .son1{
+	background: #ee6a0d;
+	opacity: 0.5;
+}
+
+/*标题3*/
 .main .title3{
 	width: 100%;
 	height: 560px;
-	background: purple;
+	margin-bottom: 96px;
+}
+.main .title3 ul li{
+	width: 236px;
+	height: 102px;
+	text-align: center;
+	border: 1px solid #e2e2e2;
+	float: left;
+	margin: 16px 13px 0px 0px;
+}
+.main .title3 ul li:nth-child(5),
+.main .title3 ul li:nth-child(10){
+	margin-right: 0px;
+}
+.main .title3 ul img{
+	height: 42px;
+	margin: 15px 0px 14px 0px;
+}
+#last4 img{
+	height: 30px;
+}
+.main .title3 ul p{
+	color: #a1a1a1;
+	font-size: 14px;
 }
 .main .title4{
 	width: 100%;
 	height: 560px;
-	background: blue;
+}
+.main .title4 ul{
+	height: 188px;
+	margin: 30px 0px 70px 0px;
+}
+.main .title4 li{
+	width: 240px;
+	height: 84px;
+	line-height: 84px;
+	color: #f1efef;
+	font-size: 18px;
+/*	border: 1px solid;*/
+	text-align: center;
+	margin-bottom: 18px;
+	background: #fafafa;
+	float: left;
+	margin-right: 11px;
+}
+.main .title4 li:nth-child(5),.main .title4 li:nth-child(10){
+	margin-right: 0px;
+}
+.main .title4 img{
+	height: 50px;
+	margin-top: 20px;
+}
+.partner{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+.main .title4 .partner a{
+	color: #a1a1a1;
+	text-decoration: none;
+	font-size: 14px;
+}
+.main .title4 .partner a:hover{
+	color: #ff6700;
 }
 /*主要end*/
 /*底部begin*/
 .footer{
 	height: 670px;
-	background: green;
+}
+.footer .title{
+	width: 100%;
+	height: 220px;
+	background: url(../image/title.png) no-repeat;
+	position: relative;
+}
+.footer .title a{
+	display: block;
+	width: 136px;
+	height: 40px;
+	color: white;
+	text-decoration: none;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid white;
+	position: absolute;
+	margin-left: 50%;
+	left: -68px;
+	bottom: 58px;
+}
+.footer .title a:hover{
+	background: white;
+	color: #ff6700;
+}
+.footer .nav{
+	width: 100%;
+	height: 450px;
+	background: #35373f;
 }
 /*底部end*/
 .bottom{
