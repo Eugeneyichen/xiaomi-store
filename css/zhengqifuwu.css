@@ -409,6 +409,7 @@ body{
 /*底部begin*/
 .footer{
 	height: 670px;
+	background: #35373f;
 }
 .footer .title{
 	width: 100%;
@@ -435,9 +436,49 @@ body{
 	color: #ff6700;
 }
 .footer .nav{
-	width: 100%;
+	width: 1244px;
 	height: 450px;
-	background: #35373f;
+	margin: 0 auto;
+}
+.footer .nav-top{
+	height: 275px;
+}
+.footer .nav-top a{
+	color: #8e8e8e;
+	text-decoration: none;
+}
+.footer .nav-top dl{
+	float: left;
+	margin: 55px 260px 0px 0px;
+}
+.footer .nav-top dl:nth-child(4){
+	margin-right: 0px;
+}
+.footer .nav-top dt{
+	font-size: 16px;
+	color: white;
+	margin-bottom: 24px;
+}
+.footer .nav-top dd{
+	color:  #8e8e8e;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.footer .nav-bottom{
+	width: 100%;
+	height: 130px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 44px;
+}
+.footer .nav-bottom p:nth-child(1){
+	color: #8e8e8e;
+	font-family: "楷体";
+}
+.footer .nav-bottom p:nth-child(2){
+	color: #8e8e8e;
+	font-size: 12px;
+	margin-top: 42px;
 }
 /*底部end*/
 .bottom{
