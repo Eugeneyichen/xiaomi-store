@@ -1,2 +1,0 @@
-# xiaomi-store
-xiaomi case
