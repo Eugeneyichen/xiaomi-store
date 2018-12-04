@@ -112,9 +112,24 @@ a{
 	box-sizing: border-box;
 	position: relative;
 }
-.head2-left-box{
-	width: 60px;
+.head2-left{
+	width: 160px;
 	height: 60px;
+	float: left;
+	box-sizing: border-box;
+}
+.head2-left span{
+	width: 100px;
+	font-size: 25px;
+	color: #ff6700;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+	left: 15px;
+}
+.head2-left-box{
+	width: 55px;
+	height: 55px;
 	background:#ff6700;
 	font-size: 20px;
 	float: left;
@@ -127,8 +142,6 @@ a{
 	width: 745px;
 	height: 50px;
 	float: right;
-	margin-right: 73px;
-	margin-top: 10px;
 }
 .head2-center a{
 	text-decoration: none;
@@ -150,11 +163,11 @@ a{
 }
 .head2-right .i1{
 	width: 245px;
-	height: 45px;
+	height: 50px;
 }
 .head2-right .box{
 	width: 48px;
-	height: 45px;
+	height: 50px;
 	float: right;
 	border: 1px solid #7f7f7f;
 	border-left: none;
@@ -163,7 +176,7 @@ a{
 }
 .head2-right div i{
 	line-height: 45px;
-	font-size: 30px;
+	font-size: 25px;
 	cursor: pointer;
 	color: #919191;
 }
@@ -179,3 +192,4 @@ a{
 .head2-right span:hover{
 	background: #ff6700;
 }
+
