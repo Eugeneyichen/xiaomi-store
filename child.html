@@ -12,9 +12,9 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/child.css">
 	<link rel="stylesheet" href="css/iconfont.css">
-</head> 
+</head>  
 <body>
-	<section class="top clearfix">
+	<section class="top">
 		<div class="container clearfix">
 			<nav class="top-nav">
 				<ul>
@@ -35,8 +35,9 @@
 						<i class="iconfont icon-cart">&#xe60c;</i>
 						<span class="cart-text">购物车</span>
 						(<span class="cart-num">0</span>)
+						<span class="cart-drop">购物车中还没有商品，赶紧选购吧！</span>
 					</a>
-					<span class="cart-drop">购物车中还没有商品，赶紧选购吧！</span>
+					
 				</div>
 			</div>
 			<div class="user-info">
@@ -48,8 +49,7 @@
 			</div>
 		</div>
 	</section>
-
-	<header class="header clearfix">
+	<header class="header">
 		<div class="container">
 			<h1 class="logo">
 				<a href="#">
@@ -59,44 +59,400 @@
 			<nav class="header-nav">
 				<ul>
 					<li class="header-nav-item header-nav-item-sj">
-						<a href="#">全部手机分类</a>
-						<div class="ca">
-							<ul>
-								<li class="ca-item">手机 电话卡<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">电视 盒子<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">笔记本 平板<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">家电 插线板<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">出行 穿戴<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">智能 路由器<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">电源 配件<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">健康 儿童<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">耳机 音箱<i class="iconfont">&#xe623;</i></li>
-								<li class="ca-item">生活 箱包<i class="iconfont">&#xe623;</i></li>
-							</ul>
-						</div>
+						<a href="#">全部手机分类
+							<div class="ca">
+								<ul>
+									<li class="ca-item">手机 电话卡<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">电视 盒子<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">笔记本 平板<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">家电 插线板<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">出行 穿戴<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">智能 路由器<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">电源 配件<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">健康 儿童<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">耳机 音箱<i class="iconfont">&#xe623;</i></li>
+									<li class="ca-item">生活 箱包<i class="iconfont">&#xe623;</i></li>
+								</ul>
+							</div>
+						</a>
 					</li>
-					<li class="header-nav-item">
-						<a href="#">小米手机</a>
-						<!-- div class="drop">
-							<ul>
-								<li class="drop-item"><a href="#"></a></li>
-								<li class="drop-item"><a href="#"></a></li>
-								<li class="drop-item"><a href="#"></a></li>
-								<li class="drop-item"><a href="#"></a></li>
-								<li class="drop-item"><a href="#"></a></li>
-								<li class="drop-item"><a href="#"></a></li>
-							</ul>
-						</div> -->
+					<li class="header-nav-item header-nav-item-xp header-nav-item-xp">
+						<a href="#" class="drop-item-a">小米手机
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg22.png" alt="">
+											<p class="drop-name">小米MIX3</p>
+											<p class="drop-price">3299元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg23.png" alt="">
+											<p class="drop-name">小米8 青春版</p>
+											<p class="drop-price">1399元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg24.png" alt="">
+											<p class="drop-name">小米8 屏幕指纹版</p>
+											<p class="drop-price">3199元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg25.png" alt="">
+											<p class="drop-name">小米8</p>
+											<p class="drop-price">2699元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg26.png" alt="">
+											<p class="drop-name">小米8 SE</p>
+											<p class="drop-price">1799元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg27.png" alt="">
+											<p class="drop-name">小米Max 3</p>
+											<p class="drop-price">1699元起</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
 					</li>
-					<li class="header-nav-item"><a href="#">红米</a></li>
-					<li class="header-nav-item"><a href="#">电视</a></li>
-					<li class="header-nav-item"><a href="#">笔记本</a></li>
-					<li class="header-nav-item"><a href="#">空调</a></li>
-					<li class="header-nav-item"><a href="#">新品</a></li>
-					<li class="header-nav-item"><a href="#">路由器</a></li>
-					<li class="header-nav-item"><a href="#">智能硬件</a></li>
-					<li class="header-nav-item"><a href="#">服务</a></li>
-					<li class="header-nav-item"><a href="#">社区</a></li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#" class="header-nav-item-a">红米
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg28.png" alt="">
+											<p class="drop-name">红米6pro</p>
+											<p class="drop-price">999元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg29.png" alt="">
+											<p class="drop-name">红米6</p>
+											<p class="drop-price">799元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg30.png" alt="">
+											<p class="drop-name">红米6A</p>
+											<p class="drop-price">799元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg31.png" alt="">
+											<p class="drop-name">红米Note 5</p>
+											<p class="drop-price">1099元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg32.png" alt="">
+											<p class="drop-name">红米s2</p>
+											<p class="drop-price">999元起</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#">电视
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg33.png" alt="">
+											<p class="drop-name">小米电视4S 75英寸</p>
+											<p class="drop-price">7999元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg34.png" alt="">
+											<p class="drop-name">小米电视4A 32英寸</p>
+											<p class="drop-price">899元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg35.png" alt="">
+											<p class="drop-name">小米电视4A 43英寸青春版</p>
+											<p class="drop-price">1499元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg36.png" alt="">
+											<p class="drop-name">小米电视4A 50英寸</p>
+											<p class="drop-price">1999元起</p>
+										<!-- </a> -->
+										<span class="new-flag">热卖</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg37.jpg" alt="">
+											<p class="drop-name">小米电视4A 55英寸</p>
+											<p class="drop-price">2499元起</p>
+										<!-- </a> -->
+										<span class="new-flag">热卖</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg38.png" alt="">
+											<p class="drop-name">查看全部</p>
+											<p class="drop-price">全部电视</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#">笔记本
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg39.jpg" alt="">
+											<p class="drop-name">小米笔记本 Air 12.5"</p>
+											<p class="drop-price">3599元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg40.jpg" alt="">
+											<p class="drop-name">小米笔记本 Air 13.3"</p>
+											<p class="drop-price">4599元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg41.png" alt="">
+											<p class="drop-name">小米笔记本 15.6"</p>
+											<p class="drop-price">4199元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg42.png" alt="">
+											<p class="drop-name">小米笔记本 Pro 15.6"</p>
+											<p class="drop-price">5599元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg44.png" alt="">
+											<p class="drop-name">小米游戏本</p>
+											<p class="drop-price">6699元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg45.png" alt="">
+											<p class="drop-name">小米平板</p>
+											<p class="drop-price">1099元起</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#">空调
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg46.jpg" alt="">
+											<p class="drop-name">小米笔记本 Air 12.5"</p>
+											<p class="drop-price">3599元起</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#">新品
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg47.png" alt="">
+											<p class="drop-name">小米8 青春版</p>
+											<p class="drop-price">1399元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg48.png" alt="">
+											<p class="drop-name">小米8 屏幕指纹版</p>
+											<p class="drop-price">3199元起</p>
+										<!-- </a> -->
+										<span class="new-flag">新品</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg49.jpg" alt="">
+											<p class="drop-name">小米手环3 NFC版</p>
+											<p class="drop-price">199元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg50.jpg" alt="">
+											<p class="drop-name">小米米家小白智能摄像机增强版</p>
+											<p class="drop-price">399元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg51.jpg" alt="">
+											<p class="drop-name">小米小爱智能闹钟</p>
+											<p class="drop-price">14元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg52.png" alt="">
+											<p class="drop-name">小米小爱蓝牙音箱随身版</p>
+											<p class="drop-price">49元起</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#">路由器
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg53.png" alt="">
+											<p class="drop-name">小米路由器 4</p>
+											<p class="drop-price">179元起</p>
+										<!-- </a> -->
+										<span class="new-flag">双频双核</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg54.png" alt="">
+											<p class="drop-name">小米路由器 4Q</p>
+											<p class="drop-price">79元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg55.png" alt="">
+											<p class="drop-name">小米路由器 3A</p>
+											<p class="drop-price">109元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg56.png" alt="">
+											<p class="drop-name">小米路由器 3G</p>
+											<p class="drop-price">189元起</p>
+										<!-- </a> -->
+										<span class="new-flag">双千兆</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg57.png" alt="">
+											<p class="drop-name">小米路由器 HD/Pro</p>
+											<p class="drop-price">499元起</p>
+										<!-- </a> -->
+										<span class="new-flag">大千兆</span>
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg58.png" alt="">
+											<p class="drop-name">查看全部小米路由器</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>	
+						</a>			
+					</li>
+					<li class="header-nav-item header-nav-item-xp">
+						<a href="#">智能硬件
+							<div class="drop">
+								<ul>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg59.jpg" alt="">
+											<p class="drop-name">米家空气净化器Pro</p>
+											<p class="drop-price">1499元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg60.jpg" alt="">
+											<p class="drop-name">小米净水器</p>
+											<p class="drop-price">1999元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg61.jpg" alt="">
+											<p class="drop-name">米家扫地机器人</p>
+											<p class="drop-price">1699元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg62.jpg" alt="">
+											<p class="drop-name">小米小爱音箱mini</p>
+											<p class="drop-price">169元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg63.jpg" alt="">
+											<p class="drop-name">米家电动剃须刀</p>
+											<p class="drop-price">199元起</p>
+										<!-- </a> -->
+									</li>
+									<li class="drop-item">
+										<!-- <a href="#"> -->
+											<img src="image/qg64.jpg" alt="">
+											<p class="drop-name">查看全部</p>
+											<p class="drop-price">智能硬件</p>
+										<!-- </a> -->
+									</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="header-nav-item header-nav-item-xp"><a href="#">服务</a></li>
+					<li class="header-nav-item header-nav-item-xp"><a href="#">社区</a></li>
 				</ul>
 			</nav>
 			<div class="search">
@@ -127,8 +483,7 @@
 	</header>
 
 	<section class="home clearfix">
-			<a href=""><img src="image/child1.jpg" alt=""></a>
-		
+			<a href=""><img src="image/child1.jpg" alt=""></a>	
 	</section>
 
 	<section class="main clearfix">
@@ -136,7 +491,7 @@
 			<div class="co1">
 				<h2>出行酷玩</h2>
 				<div class="co1-item">
-					<div class="co1-item-on">
+					<div class="co1-item-on co1-item-left-item">
 						<a href=""><img src="image/child2.jpg" alt=""></a>
 						<div class="co1-dianche">
 							<p class="co1-name"><a href="">小米米家电动滑板<br>车</a></p>
@@ -148,7 +503,7 @@
 						</div>
 					</div>
 					<div class="co1-item-down">
-						<div class="co1-item-left">
+						<div class="co1-item-left co1-item-left-item">
 							<a href="#"><img src="image/child3.jpg" alt=""></a>
 							<div class="glabol">
 								<p class="co1-name"><a href="">九号平衡车 Plus</a></p>
@@ -158,7 +513,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="co1-item-right">
+						<div class="co1-item-right co1-item-left-item">
 							<a href="#"><img src="image/child4.jpg" alt=""></a>
 							<div class="glabol">
 								<p class="co1-name"><a href="">电助力折叠自行车</a></p>
@@ -170,9 +525,9 @@
 						</div>
 					</div>
 				</div>
-				<h2>儿童酷玩</h2>
+				<h2 class="co1-h">儿童酷玩</h2>
 				<div class="co1-item">
-					<div class="co1-item-on">
+					<div class="co1-item-on co1-item-left-item">
 						<a href=""><img src="image/child5.jpg" alt=""></a>
 						<div class="co1-dianche">
 							<p class="co1-name"><a href="">米兔智能故事机</a></p>
@@ -184,7 +539,7 @@
 						</div>
 					</div>
 					<div class="co1-item-down">
-						<div class="co1-item-left">
+						<div class="co1-item-left co1-item-left-item">
 							<a href="#"><img src="image/child6.jpg" alt=""></a>
 							<div class="glabol">
 								<p class="co1-name"><a href="">米兔智能积木</a></p>
@@ -194,7 +549,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="co1-item-right">
+						<div class="co1-item-right co1-item-left-item">
 							<a href="#"><img src="image/child7.jpg" alt=""></a>
 							<div class="glabol">
 								<p class="co1-name"><a href="">米兔积木机器人</a></p>
@@ -206,14 +561,29 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> 
 
 			<div class="co2">
 				<h2>优选推荐</h2>
 				<ul>
-					<li class="co2-item"></li>
-					<li class="co2-item"></li>
-					<li class="co2-item"></li>
+					<li class="co2-item co1-item-left-item">
+						<a href=""><img src="image/child8.jpg" alt=""></a>
+						<p class="co2-item-name"><a href="">小米无人机保护架</a></p>
+						<p class="co2-item-jieshi">一组四片，有效保护螺旋桨</p>
+						<p class="co2-item-price">39<span>元</span></p>
+					</li>
+					<li class="co2-item co1-item-left-item">
+						<a href=""><img src="image/child9.jpg" alt=""></a>
+						<p class="co2-item-name"><a href="">小米无人机螺旋桨</a></p>
+						<p class="co2-item-jieshi">尺寸大，惯量低，效率高</p>
+						<p class="co2-item-price">49<span>元</span></p>
+					</li>
+					<li class="co2-item co1-item-left-item">
+						<a href=""><img src="image/child10.jpg" alt=""></a>
+						<p class="co2-item-name"><a href="">无人机电池 零售版</a></p>
+						<p class="co2-item-jieshi">超大电量，抽屉式电池仓</p>
+						<p class="co2-item-price">499<span>元</span></p>
+					</li>
 				</ul>
 			</div>
 		</div>
