@@ -353,6 +353,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .phone li:nth-child(5){
 	margin-right: 0px;
@@ -383,8 +384,11 @@ a{
 	text-align: center;
 	font-size: 12px;
 	overflow: hidden;
-	transition: height 1s;
+	transition: height 0.5s;
 	position: absolute;
+	left: 0;
+	bottom: 0px;
+
 }
 .content2 .phone li:hover .box{
 	height: 44px;
@@ -433,6 +437,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .TV li:nth-child(5){
 	margin-right: 0px;
@@ -454,6 +459,25 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .TV .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .TV li:hover .box{
+	height: 44px;
+}
+
 
 
 .content2 .BOX .BOX-head{
@@ -498,6 +522,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .BOX li:nth-child(5){
 	margin-right: 0px;
@@ -519,6 +544,26 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .BOX .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .BOX li:hover .box{
+	height: 44px;
+}
+
+
 
 .content2 .ZN .ZN-head{
 	width: 1226px;
@@ -562,6 +607,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .ZN li:nth-child(5){
 	margin-right: 0px;
@@ -583,6 +629,28 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .ZN .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .ZN li:hover .box{
+	height: 44px;
+}
+
+
+
+
 .content2 .EAR .EAR-head{
 	width: 1226px;
 	height: 80px;
@@ -625,6 +693,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .EAR li:nth-child(5){
 	margin-right: 0px;
@@ -646,6 +715,28 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .EAR .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .EAR li:hover .box{
+	height: 44px;
+}
+
+
+
+
 .content2 .ELSE .ELSE-head{
 	width: 1226px;
 	height: 80px;
@@ -688,6 +779,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .ELSE li:nth-child(5){
 	margin-right: 0px;
@@ -709,6 +801,28 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .ELSE .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .ELSE li:hover .box{
+	height: 44px;
+}
+
+
+
+
 .content2 .LIFE .LIFE-head{
 	width: 1226px;
 	height: 80px;
@@ -751,6 +865,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .LIFE li:nth-child(5){
 	margin-right: 0px;
@@ -772,6 +887,27 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .LIFE .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .LIFE li:hover .box{
+	height: 44px;
+}
+
+
+
 .content2 .GIFT .GIFT-head{
 	width: 1226px;
 	height: 80px;
@@ -814,6 +950,7 @@ a{
 	margin-right: 29px;
 	text-align: center;
 	transition:box-shadow 0.5s;
+	position: relative;
 }
 .content2 .GIFT li:nth-child(5){
 	margin-right: 0px;
@@ -835,6 +972,27 @@ a{
 	box-shadow:0 2px 2px 2px #D0CBCB;
 	transform: translateY(1);
 }
+.content2 .GIFT .box{
+	width: 230px;
+	height: 0;
+	background: #ff6700;
+	line-height: 44px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	overflow: hidden;
+	transition: height 0.5s;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+
+}
+.content2 .GIFT li:hover .box{
+	height: 44px;
+}
+
+
+
 
 
 
