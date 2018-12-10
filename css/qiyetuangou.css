@@ -1043,6 +1043,7 @@ a{
 	content: "";
 	width: 8px;
 	height: 8px;
+	border-radius:
 	border-radius: 20px;
 	background: gray;
 	position: absolute;
