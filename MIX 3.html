@@ -312,7 +312,7 @@
 			</div></header>	
 	<section class="homea home">
 		<div class="continer clearfix">
-			<h2>小米8 青春版</h2>
+			<h2>小米MIX 3</h2>
 			<nav class="home-nav">
 				<ul class="right-ul">
 					<li class="right-ul-li">
@@ -341,7 +341,7 @@
 		</div></section>
 	<section class="homeb home">
 		<div class="continer clearfix">
-			<h2>小米8 青春版</h2>
+			<h2>小米MIX 3</h2>
 			<nav class="home-nav">
 				<ul class="right-ul">
 					<li class="right-ul-li">
@@ -370,7 +370,7 @@
 		</div></section>
 	<section class="main clearfix">
 		<ul class="main-ul1">
-			<li id="lb1">
+			<li class="am-lb-i" id="lb1">
 				<img src="images/s2-1.jpg">
 				<div class="continer clearfix mixccc">
 					<p>小米MIX3</p>
@@ -381,7 +381,7 @@
 					<span>元起</span>
 				</div>
 			</li>
-			<li id="lb2">
+			<li class="am-lb-i" id="lb2">
 				<img src="images/s2-2.jpg">
 				<div class="continer clearfix">
 					<p>小米MIX3</p>
@@ -393,7 +393,7 @@
 				</div>
 
 			</li>
-			<li id="lb3">
+			<li class="am-lb-i" id="lb3">
 				<img src="images/s2-3.jpg">
 				<div class="continer clearfix">
 					<p>小米MIX3</p>
@@ -405,13 +405,13 @@
 				</div>				
 			</li>
 		</ul>
-		<i class="iconfont left-row row">&#xe627;</i>
-		<i class="iconfont right-row row">&#xe622;</i>
-		<ul class="main-ul1-1">
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+		<i class="iconfont left-aarow row">&#xe627;</i>
+		<i class="iconfont right-aarow row">&#xe622;</i>
+		<div class="main-ul1-1">
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+		</div>
 		<ul class="main-ul2">
 			<li>
 				<img src="images/s2-21-1.png">
@@ -446,7 +446,7 @@
 				</div>				
 			</li>
 			<li>
-				<video src="images/s2-24-1.mp4" autoplay loop></video>
+				<video src="images/s2-24-1.mp4" autoplay loop muted></video>
 				<div class="continer clearfix">
 					<a href="#"><i class="iconfont">&#xe601;</i></a>
 					<p>小米MIX 3 故宫特别版</p>
@@ -506,7 +506,7 @@
 				</div>				
 			</li>
 			<li>
-				<video src="images/s2-29-2.mp4" autoplay loop></video>
+				<video src="images/s2-29-2.mp4" autoplay loop muted></video>
 				<img src="images/s2-29-1.png">
 				<div class="continer clearfix">
 					<div>
@@ -771,6 +771,45 @@
 	var oAtn17= document.querySelector('#header-nav-ul-li-a9')
 	var oAtn18= document.querySelector('#header-nav-ul-10')
 	var oHomeb= document.querySelector('.homeb')
+	var oImg = document.querySelectorAll('.am-lb-i')
+	var oLrow = document.querySelector('.left-aarow')
+	var oRrow = document.querySelector('.right-aarow')
+	var oArow = document.querySelector('.main-ul1-1')
+	var oAarow = oArow.children;
+	console.log(oImg);
+	console.log(oLrow);
+	console.log(oRrow);
+	console.log(oAarow);
+	var neww=0;
+	var timer=0;
+	function aaa(){
+		for(var i=0;i<oImg.length;i++){
+			oImg[i].style.display='none';
+			oAarow[i].style.borderColor='gray';
+		}
+		oImg[neww].style.display='block'
+		oAarow[neww].style.borderColor='white';
+	}
+		oAarow[neww].style.borderColor='white';
+	oLrow.onclick =function(){
+		neww--;
+		if(neww<0){
+			neww=oImg.length-1;
+		}
+		aaa()
+	}
+	oRrow.onclick =function(){
+		neww++;
+		if(neww>=3){
+			neww=0;
+		}
+		aaa()
+	}
+	oArow.onclick = function(){
+		neww=this.index;
+		console.log(this.index);
+		aaa()
+	}
 	setInterval(function(){
 		if(document.documentElement.scrollTop>=140){
 			oHomeb.style.display='block';
