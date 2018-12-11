@@ -68,6 +68,31 @@
 			<a href="#">礼品卡</a>
 		</div>
 	</div>
+	<div id="head3">
+		<div class="head3-left">
+			<div class="head3-left-box">
+				<a href="#">
+					<img src="C:/Users/liyuphp/xiaomi-store/image/logo.png" title="小米企业团购">
+				</a>
+			</div>
+			<span>企业购</span>
+		</div>
+		<div class="head3-right">
+			<input type="text" name="text" class="i1" id="i1">		
+			<div class="box"><i class="iconfont">&#xe616;</i></div>	
+		</div>
+		<div class="head3-center">
+			<a href="#" class="a1" id="a">手机 ▪ 平板 ▪ 笔记本</a>
+			<a href="#" id="a1">电视</a>
+			<a href="#">小米盒 ▪ 路由器</a>
+			<a href="#">智能硬件</a>
+			<a href="#">耳机▪音响</a>
+			<a href="#">配件</a>
+			<a href="#">生活周边</a>
+			<a href="#">礼品卡</a>
+		</div>
+	</div>
+	</div>
 	<div class="content1">
 		<div class="content1-left">
 			<a href="#">
@@ -654,4 +679,17 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript">
+	var oBox = document.getElementById('head3');
+
+	window.onscroll = function(){
+		if(getScrollTop() >= 50){
+			console.log(getScrollTop())
+			animate(oBox,'height',50)
+		}else{
+			animate(oBox,'height',0)
+		}
+	}
+</script>
 </html>

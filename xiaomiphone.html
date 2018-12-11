@@ -474,9 +474,16 @@
 <script type="text/javascript">
 		var oButn1 = document.getElementById('i1')
 		var oBox1 = document.getElementById('box')
-		oButn1.onclick = function(){
-			oBox1.style.display="block"
-		}
+		
+		oButn1.addEventListener(onclick,function(){
+			oBox1.display = 'block'
+		},false);
+		/*
+		oBox1.addEventListener(onclick,function(){
+			oBox1.style.display = 'none'
+		},false);
+		*/
+
 
 
 
@@ -505,6 +512,9 @@
 		var oButn4 = document.getElementById('a1')
 		var oBox4 = document.getElementById('b4')
 		oButn4.onmouseover = function(){
+			oBox4.style.display="block"
+		}
+		oBox4.onmouseover = function(){
 			oBox4.style.display="block"
 		}
 		oBox4.onmouseout = function(){

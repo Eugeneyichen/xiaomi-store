@@ -196,6 +196,98 @@ a{
 }
 
 
+#head3{
+	width: 1266px;
+	height: 0px;
+	background: white;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 159px;
+	overflow: hidden;
+}
+.head3-left{
+	width: 160px;
+	float: left;
+	box-sizing: border-box;
+}
+.head3-left span{
+	width: 100px;
+	font-size: 25px;
+	color: #ff6700;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+	left: 15px;
+}
+.head3-left-box{
+	width: 55px;
+	height: 55px;
+	background:#ff6700;
+	font-size: 20px;
+	float: left;
+}
+.head3-left-box img{
+	width: 100%;
+	height: 100%;
+}
+.head3-center{
+	width: 745px;
+	height: 50px;
+	float: right;
+	margin-right: 45px;
+}
+.head3-center a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	margin-left: 17px;
+	line-height: 50px;
+}
+.head3-center a:hover{
+	color: #ff6700;
+}
+.head3-right{
+	width: 293px;
+	float: right;
+}
+.head3-right input{
+	border: 1px solid #7f7f7f;
+	box-sizing: border-box;
+}
+.head3-right .i1{
+	width: 245px;
+	height: 50px;
+}
+.head3-right .box{
+	width: 48px;
+	height: 50px;
+	float: right;
+	border: 1px solid #7f7f7f;
+	border-left: none;
+	box-sizing: border-box;
+	text-align: center;
+}
+.head3-right div i{
+	line-height: 45px;
+	font-size: 25px;
+	cursor: pointer;
+	color: #919191;
+}
+.head3-right .box:hover{
+	background: #ff6700;
+}
+.head3-right .box:hover i{
+	color: white;
+}
+.head3-right input:hover{
+	border: 1px solid #ff6700;
+}
+.head3-right span:hover{
+	background: #ff6700;
+}
+
+
 
 .content1{
 	width: 1266px;
