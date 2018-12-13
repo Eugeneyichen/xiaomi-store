@@ -190,3 +190,56 @@ var oHeaderNav7 = document.getElementById('header-nav7')
 	// 	console.log(this.index);
 	// 	aaa()
 	// }
+
+	//轮播图
+	// <div class="carousel">
+	// 	<ul>
+	// 		<li class="carousel-imgs-item"><img src="image/b1.jpg" alt=""></img></li>
+	// 		<li class="carousel-imgs-item"><img src="image/b2.jpg" alt=""></img></li>
+	// 		<li class="carousel-imgs-item"><img src="image/b3.jpg" alt=""></img></li>
+	// 	</ul>
+	// 	<span class="arrow left-arrow iconfont">&#xe627;</span>
+	// 	<span class="arrow right-arrow iconfont">&#xe622;</span>
+	// 	<ul class="carousel-btn">
+	// 		<li class="active"></li>
+	// 		<li></li>
+	// 		<li></li>
+	// 	</ul>
+	// </div>
+
+	//获取元素
+	var aImg = document.querySelectorAll('.carousel-imgs-item');
+	var oLeftArrow = document.querySelector('.left-arrow');
+	var oRightArrow = document.querySelector('.right-arrow');
+	var aBtn = document.querySelector('.carousel-btn').children;
+	console.log(aImg)
+	//添加事件
+	var now = 0
+	aImg[0].style.display = 'block';
+	aBtn[0].style.borderColor='#979590';
+	aBtn[0].style.backgroundColor='#fcf9f0';
+
+	function xunhuan(){
+		for(var i = 0;i<aImg.length;i++){
+			aImg[i].style.display='none';
+			aBtn[i].style.borderColor='#b5b3ad';
+			aBtn[i].style.backgroundColor='#96938a';
+		}
+		aImg[now].style.display = 'block';
+		aBtn[now].style.borderColor='#979590';
+		aBtn[now].style.backgroundColor='#fcf9f0';
+	}		
+	oRightArrow.onclick = function(){
+		now++;
+		if(now>2){
+			now=0
+		}
+		xunhuan()
+	}
+	oLeftArrow.onclick = function(){
+		now--;
+		if(now<0){
+			now=2
+		}
+		xunhuan()
+	}
