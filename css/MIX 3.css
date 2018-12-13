@@ -422,6 +422,7 @@ cursor: pointer;
 }
 .main>.main-ul1>li{
 	display: none;
+	opacity: 1;
 	position: relative;
 	float: left;
 	width: 100%;
