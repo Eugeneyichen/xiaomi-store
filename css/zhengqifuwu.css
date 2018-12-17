@@ -63,10 +63,12 @@ body{
 	width: 460px;
 	height: 100%;
 	float: right;
+	position: relative;
 }
 .header .nav-right li{
 	float: left;
 	margin-right: 44px;
+	cursor: pointer;
 }
 .header .nav-right li:last-child{
 	margin-right: 0px;
@@ -79,6 +81,27 @@ body{
 .header .nav-right li a:hover{
 	color: #ff6b02;
 }
+.header .nav-right ul{
+	background: black;
+	opacity: 0.9;
+	width: 360px;
+	height: 80px;
+	line-height: 80px;
+	position: absolute;
+	top: 88px;
+	left: -260px;
+	z-index: 99;
+	display: none;
+}
+.header .nav-right ul li{
+	margin-left: 30px;
+	margin-right:0px;
+
+}
+.header .nav-right ul li a{
+	color: white; 
+	font-size: 14px;
+}
 /*头部end*/
 /*热卖begin*/
 .hot{
@@ -89,7 +112,6 @@ body{
 .hot ul{
 	width: 5400px;
 	height: 500px;
-	background: red;
 	animation:sport 10s linear infinite;
 }
 @keyframes sport{
