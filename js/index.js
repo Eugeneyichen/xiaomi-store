@@ -1,22 +1,115 @@
+
+handleCart()
+handleNav()
+
+
 //购物车
-var oCart = document.querySelector('.top .cart')
-var oCartLink = document.querySelector('.top .cart .cart-box a')
-var oCartContent = document.querySelector('.top .cart .cart-content')
-oCart.onmouseenter = function(){
-	//当鼠标hover的时候改变背景颜色的字体颜色
-	oCartLink.style.backgroundColor = '#fff';
-	oCartLink.style.color = '#ff6700';
-	animate(oCartContent,{height:100},true);
+function handleCart(){
+	var oCart = document.querySelector('.top .cart');
+	var oCartLink = document.querySelector('.top .cart .cart-box a');
+	var oCartContent = document.querySelector('.top .cart .cart-content');
+	var oLoader = oCartContent.querySelector('.loader');
+	var oEmptyCart = oCartContent.querySelector('.empty-cart');
+
+	oCart.onmouseenter = function(){
+		//1.当鼠标在购物车上时改变购物车背景颜色和字体颜色
+		oCartLink.style.backgroundColor = '#fff';
+		oCartLink.style.color = '#ff6700';
+		//2.加载loading图标
+		oLoader.style.display = 'block';
+		//3.显示购物车内容，并模拟显示购物车里的数据
+		animate(oCartContent,{height:100},true,function(){
+			oLoader.style.display = 'none';
+			oEmptyCart.style.display = 'block';
+		});
+	}
+	oCart.onmouseleave = function(){
+		//1.当鼠标离开购物车时改变购物车背景颜色和字体颜色
+		oCartLink.style.backgroundColor = '#424242';
+		oCartLink.style.color = '#b0b0b0';
+		//2.隐藏购物车内容
+		animate(oCartContent,{height:0},true,function(){
+			oLoader.style.display = 'none';
+			oEmptyCart.style.display = 'block';
+
+		});
+	}
 }
-oCart.onmouseleave = function(){
-	oCartLink.style.backgroundColor = '#424242';
-	oCartLink.style.color = '#b0b0b0';
-	animate(oCartContent,{height:0},true);
+
+//导航下拉菜单
+function handleNav(){
+	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
+	var oNavContent = document.querySelector('.header .header-nav-content');
+	var oNavContentContainer = oNavContent.querySelector('.container');
+	var hideTimer = 0
+	for(var i = 0;i<aNavItem.length;i++){
+		aNavItem[i].index = i;
+		aNavItem[i].onmouseenter = function(){
+			clearInterval(hideTimer);
+			oNavContent.style.borderTop = '1px solid #ccc';
+			animate(oNavContent,{height:200},true,function(){
+				oNavContent.style.overflow = 'visible';
+			});
+			loadDate(this.index);
+		}
+		aNavItem[i].onmouseleave = function(){
+			hideNavContent()
+		}
+	}
+	oNavContent.onmouseenter = function(){
+		clearInterval(hideTimer);
+	}
+	oNavContent.onmouseleave = function(){
+		hideNavContent()
+	}
+	function hideNavContent(){
+		hideTimer = setTimeout(function(){
+				oNavContent.style.overflow = 'hidden';
+				animate(oNavContent,{height:0},true,function(){
+				oNavContent.style.borderTop = 'none';
+				})
+			},500);
+	}
+	function loadDate(index){
+		var data = aNavItemDate[index];
+		var html = '<ul>';
+		for(var i = 0;i<data.length;i++){
+			html += '<li>';
+			html +=	'	<div class="img-box">';
+			html +=	'		<a href="'+data[i].url+'">';
+			html +=	'			<img src="'+data[i].img+'" alt="">';
+			html +=	'		</a>';
+			html +=	'	</div>';
+			html +=	'	<p class="product-name">'+data[i].name+'</p>';
+			html +=	'	<p class="product-price">'+data[i].price+'</p>';
+			if(data[i].tag){
+				html +=	'	<span class="tag">'+data[i].tag+'</span>';
+			}
+			html +=	'</li>';
+		}
+		html += '</ul>';
+		oNavContentContainer.innerHTML = html;
+	}
 }
 
 
 
 
+
+// function handleElecProduct(){
+// 	var oElecItem = document.querySelectorAll('.elsc .more-tab .tab-item');
+// 	var oElecProduct = document.querySelectorAll('.elsc .col2 .product-item');
+
+// 		console.log(oElecItem)
+// 	for(var i = 0;i<oElecItem.length;i++){
+// 		oElecItem[i].onmouseenter = function(){
+// 			// this.className = 'tab-item tab-item-active';
+// 			console.log('aa')
+			
+// 		}
+// 	}
+
+// }
 
 
 
@@ -164,3 +257,50 @@ oCart.onmouseleave = function(){
 // 		}		
 // 	},30)
 // }
+					// <div class="drop" id="drop-nav1">
+					// 			<ul>
+					// 				<li class="drop-item">
+					// 						<img src="image/qg22.png" alt="">
+					// 						<p class="drop-name">小米MIX3</p>
+					// 						<p class="drop-price">3299元起</p>
+					// 					<span class="new-flag">新品</span>
+					// 				</li>
+					// 				<li class="drop-item">
+					// 					<!-- <a href="#"> -->
+					// 						<img src="image/qg23.png" alt="">
+					// 						<p class="drop-name">小米8 青春版</p>
+					// 						<p class="drop-price">1399元起</p>
+					// 					<!-- </a> -->
+					// 					<span class="new-flag">新品</span>
+					// 				</li>
+					// 				<li class="drop-item">
+					// 					<!-- <a href="#"> -->
+					// 						<img src="image/qg24.png" alt="">
+					// 						<p class="drop-name">小米8 屏幕指纹版</p>
+					// 						<p class="drop-price">3199元起</p>
+					// 					<!-- </a> -->
+					// 					<span class="new-flag">新品</span>
+					// 				</li>
+					// 				<li class="drop-item">
+					// 					<!-- <a href="#"> -->
+					// 						<img src="image/qg25.png" alt="">
+					// 						<p class="drop-name">小米8</p>
+					// 						<p class="drop-price">2699元起</p>
+					// 					<!-- </a> -->
+					// 				</li>
+					// 				<li class="drop-item">
+					// 					<!-- <a href="#"> -->
+					// 						<img src="image/qg26.png" alt="">
+					// 						<p class="drop-name">小米8 SE</p>
+					// 						<p class="drop-price">1799元起</p>
+					// 					<!-- </a> -->
+					// 				</li>
+					// 				<li class="drop-item">
+					// 					<!-- <a href="#"> -->
+					// 						<img src="image/qg27.png" alt="">
+					// 						<p class="drop-name">小米Max 3</p>
+					// 						<p class="drop-price">1699元起</p>
+					// 					<!-- </a> -->
+					// 				</li>
+					// 			</ul>
+					// 		</div>
