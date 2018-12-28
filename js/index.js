@@ -2,6 +2,7 @@
 handleCart();
 handleNav();
 handleCarousel();
+handleCate()
 handleCountdown();
 handleFlashProduct();
 
@@ -111,7 +112,7 @@ function handleCarousel(){
 		var aBtn = document.querySelector('.carousel-btn').children;
 		var oCarousel = document.querySelector('.carousel')
 		var timer = 0;
-		console.log(aImg)
+		// console.log(aImg)
 		//添加事件
 		var now = 0
 		aImg[0].style.display = 'block';
@@ -243,6 +244,51 @@ function handleCarousel(){
 	}
 }
 
+//分类左拉面板
+function handleCate(){
+	var aCateItem = document.querySelectorAll('.home .banner .cate .cate-item');
+	var oCateContent = document.querySelector('.home .banner .cate-content');
+	var oCateBox = document.querySelector('.home .banner .cate-box');
+	// console.log(oCateBox)
+	for(var i = 0;i<aCateItem.length;i++){
+		aCateItem[i].index = i;
+		aCateItem[i].onmouseenter = function(){
+			for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item'
+			}
+			oCateContent.style.display = 'block';
+			this.className = 'cate-item active';
+			loadDate(this.index);
+		}
+	}
+	oCateBox.onmouseleave = function(){
+		oCateContent.style.display = 'none';
+		for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item'
+		}
+	}
+	function loadDate(index){
+		var date = aCateItemDate[index];
+		var html = '<ul>'
+		for(var i = 0;i<date.length;i++){
+			html += '<li>'
+			html += 	'<a href="'+date[i].url+'">'
+			html += 		'<img src="'+date[i].img+'" alt="">'
+			html += 		'<span>'+date[i].name+'</span>'
+			html += 	'</a>'
+			html += '</li>'
+		}
+
+		html += '</ul>'
+		oCateContent.innerHTML = html;
+	}
+
+
+
+
+}
+
+
 //倒计时
 function handleCountdown(){
 	var oTimenum = document.querySelectorAll('.flash .timer-num');
@@ -274,7 +320,7 @@ function handleCountdown(){
 function handleFlashProduct(){
 	var oProductList = document.getElementById('product-list2');
 	var aSpan = document.querySelectorAll('.flash .ctr-btn');
-	console.log(aSpan)
+	// console.log(aSpan)
 	aSpan[0].onclick = function(){
 		oProductList.style.left= '0px';
 	}

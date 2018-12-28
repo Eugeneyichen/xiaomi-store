@@ -374,7 +374,10 @@
 	color: #fff;
 	cursor: pointer;
 }
-.home .banner .cate .cate-item:hover{
+/*.home .banner .cate .cate-item:hover{
+	background: #ff6700;
+}*/
+.home .banner .cate .active{
 	background: #ff6700;
 }
 .home .banner .cate .cate-item a{
@@ -384,6 +387,44 @@
 .home .banner .cate .cate-item i{
 	float: right;
 	color: #b0b0b0;
+}
+.home .banner .cate-content{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 234px;
+	/*max-height: 100%;*/
+	height: 100%;
+	min-width: 400px;
+	background-color: #fff;
+	z-index: 999;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.home .banner .cate-content li{
+	float: left;
+	width: 160px;
+	height: 75px;
+}
+.home .banner .cate-content li a{
+	display: inline-block;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+}
+.home .banner .cate-content li span{
+	font-size: 14px;
+	color: rgb(51,51,51);
+}
+.home .banner .cate-box .cate-content li a:hover{
+	color: #ff6700;
+}
+.home .banner .cate-content li img{
+	width: 55px;
+	height: 40px;
+	vertical-align: middle;
 }
 .home .banner .carousel{
 	height: 100%;
