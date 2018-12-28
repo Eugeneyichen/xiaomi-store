@@ -30,12 +30,16 @@
 				<a href="#">登录</a><span>|</span>
 				<a href="#">注册</a><span>|</span>
 				<a href="#">消息通知</a>
-				<div class="head1-right-box" id="b2">
+				<div class="head1-right-box">
 					<a href="#">
 						<i class="iconfont icont-cart">&#xe60c;</i>
 						<span>购物车</span>
 						<span>(0)</span>
 					</a>
+				</div>
+				<div class="gwbox">
+					<span class="s1">购物车中还没有任何商品，赶紧选购吧</span>
+					<div class="b1"></div>
 				</div>
 			</div>	
 		</div>
@@ -50,17 +54,14 @@
 			</div>
 		</div>
 		<div class="head2-right">
-			<input type="text" name="text" class="i1" id="i1">
+			<input type="text" name="text" class="i1">
 			<span class="s1">小米8</span>
 			<span class="s2">小米MIX2S</span>			
 			<div class="box"><i class="iconfont">&#xe616;</i></div>
-			<div class="b1" id="b3">
-				<span>购物车中还没有任何商品，赶紧选购吧</span>
-			</div>
 		</div>
 		<div class="head2-center">
-			<a href="#" class="a1" id="a">全部商品分类</a>
-			<a href="#" id="a1">小米手机</a>
+			<a href="#" class="a1">全部商品分类</a>
+			<a href="#">小米手机</a>
 			<a href="#">红米</a>
 			<a href="#">电视</a>
 			<a href="#">笔记本</a>
@@ -71,7 +72,7 @@
 			<a href="#">服务</a>
 			<a href="#">社区</a>
 		</div>
-		<div class="head2-bottom" id="box">
+		<div class="head2-bottom">
 			<ul>
 				<li><a href="#"><span class="s1">小米6X</span><span class="s2">约有6件</span></a></li>
 				<li><a href="#"><span class="s1">小米6X</span><span class="s2">约有6件</span></a></li>
@@ -92,7 +93,7 @@
 		<div class="b2"><i class="iconfont i2">&#xe622;</i></div>
 		<div class="b3"></div>
 		<div class="b4"></div>
-		<div class="box" id="b1">
+		<div class="box">
 				<ul>
 					<li><a href="#"><span>手机 电话卡</span><i class="iconfont">&#xe623;</i></a></li>
 					<li><a href="#"><span>电视 盒子</span><i class="iconfont">&#xe623;</i></a></li>
@@ -106,7 +107,7 @@
 					<li><a href="#"><span>生活 箱包</span><i class="iconfont">&#xe623;</i></a></li>	
 				</ul>
 		</div>
-		<div class="b5" id="b4">
+		<div class="b5">
 			<div>
 			<ul>
 				<li>
@@ -114,7 +115,7 @@
 					<div class="s2"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mix3-320.png"></div>
 					<span class="v1">小米MIX3</span><br>
 					<span class="v2">3299元起</span>
-				</li>
+				</li> 
 				<li class="left-line">
 					<div class="s1"><span>新品</span></div>
 					<div class="s2"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/qingchun-320.png"></div>
@@ -471,54 +472,5 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript">
-		var oButn1 = document.getElementById('i1')
-		var oBox1 = document.getElementById('box')
-		
-		oButn1.addEventListener(onclick,function(){
-			oBox1.display = 'block'
-		},false);
-		/*
-		oBox1.addEventListener(onclick,function(){
-			oBox1.style.display = 'none'
-		},false);
-		*/
-
-
-
-
-		var oButn2 = document.getElementById('a')
-		var oBox2 = document.getElementById('b1')
-		oButn2.onmouseover = function(){
-			oBox2.style.display="block"
-		}
-		oBox2.onmouseover = function(){
-			oBox2.style.display="block"
-		}
-		oBox2.onmouseout = function(){
-			oBox2.style.display="none"
-		}
-
-		var oButn3 = document.getElementById('b2')
-		var oBox3 = document.getElementById('b3')
-		oButn3.onmouseover = function(){
-			oBox3.style.display="block"
-		}
-		oBox3.onmouseout = function(){
-			oBox3.style.display="none"
-		}
-
-
-		var oButn4 = document.getElementById('a1')
-		var oBox4 = document.getElementById('b4')
-		oButn4.onmouseover = function(){
-			oBox4.style.display="block" 
-		}
-		oBox4.onmouseover = function(){
-			oBox4.style.display="block"
-		}
-		oBox4.onmouseout = function(){
-			oBox4.style.display="none"
-		}
-	</script>
+<script type="text/javascript" src="index.js"></script>
 </html>
