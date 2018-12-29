@@ -5,6 +5,7 @@ handleCarousel();
 handleCate()
 handleCountdown();
 handleFlashProduct();
+handleElecProduct();
 
 
 //购物车
@@ -283,9 +284,6 @@ function handleCate(){
 		oCateContent.innerHTML = html;
 	}
 
-
-
-
 }
 
 
@@ -326,5 +324,27 @@ function handleFlashProduct(){
 	}
 	aSpan[1].onclick = function(){
 		oProductList.style.left= '-978px';
+	}
+}
+
+//处理选项卡
+function handleElecProduct(){
+	//获取元素
+	var aTabItem = document.querySelectorAll('.elsc .more .tab-item');
+	var oElecProduct = document.querySelector('.elsc .col2 .product-list');
+	//添加事件
+	for(var i = 0;i<aTabItem.length;i++){
+		aTabItem[i].index = i;
+		aTabItem[i].onmouseenter = function(){
+			//排他
+			for(var j = 0;j<aTabItem.length;j++){
+				aTabItem[j].className = 'tab-item';
+			}
+			this.className = 'tab-item tab-item-active';
+			loadDate(this.index);
+		}
+	}
+	function loadDate(index){
+		
 	}
 }
