@@ -285,7 +285,7 @@ var aNavItemDate = [
 			price:'智能硬件',
 		},
 	],
-]
+];
 var aCateItemDate = [
 	[
 		{
@@ -541,5 +541,515 @@ var aCateItemDate = [
 			img:'image/qg22.png',
 			name:'小米MIX3',
 		},
+	],
+];
+var aElecItemData = [
+	[
+		{
+			url:'#',
+			img:'image/elsc1.jpg',
+			name:'小米电视4A 43英寸青春版',
+			desc:'全高清屏/人工智能语音',
+			price:'1499',
+			del:'1699元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'直都想买个小米电视，果然不失望，大爱',
+			author:'来自于1471474629的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc2.jpg',
+			name:'小米电视4C 50英寸',
+			desc:'4K HDR/人工智能语音',
+			price:'1999',
+			del:'2199元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'我一直催货，还不给我发货，我等了一周，买了为了看NBA',
+			author:'来自于的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc3.png',
+			name:'15.6 笔记本 i5 4G MX110',
+			desc:'全面均衡的国民轻薄本',
+			price:'4199',
+			del:'',
+			flag:{
+				name:'off-flog',
+				content:'新品'
+			},
+			view:{
+			recommend:'拿包裹的心事迫切的，用的都是小米的，自己送给',
+			author:'来自于大婷宝的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc4.jpg',
+			name:'小米笔记本Air 13.3″',
+			desc:'小米笔记本Pro 15.6"',
+			price:'5399',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'召唤神龙',
+			author:'来自于1450685747的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc5.png',
+			name:'米家空气净化器Pro',
+			desc:'米家空气净化器 2S ',
+			price:'1499',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'卧室里的净化器好小，这次买个大的放到客厅里，我米加油',
+			author:'来自于孔繁义的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc6.jpg',
+			name:'米家电水壶',
+			desc:'一杯水，是一家人的安心 ',
+			price:'99',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'外形时尚，容量大，好打理，再也不用担心清理问题，这',
+			author:'来自于精益眼镜的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc7.png',
+			name:'米家LED吸顶灯',
+			desc:'色温亮度可调',
+			price:'399',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'不错 方便好用 调光温馨 有调光 锁定功能',
+			author:'来自于千龙的评价'
+			}
+		},
+		{
+			top:{
+				url:'#',
+				img:'image/elsc8.jpg',
+				name:'小米净水器',
+				price:'1899'
+			},
+			bottom:{
+				url:'#',
+				txt:'浏览更多',
+				tag:'热门',
+				icon:'&#xe615;'
+			}
+		}
+	],
+	[
+		{
+			url:'#',
+			img:'image/elsc1.jpg',
+			name:'小米电视4A 43英寸青春版',
+			desc:'全高清屏/人工智能语音',
+			price:'1499',
+			del:'1699元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'直都想买个小米电视，果然不失望，大爱',
+			author:'来自于1471474629的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc2.jpg',
+			name:'小米电视4C 50英寸',
+			desc:'4K HDR/人工智能语音',
+			price:'1999',
+			del:'2199元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'我一直催货，还不给我发货，我等了一周，买了为了看NBA',
+			author:'来自于的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc3.png',
+			name:'15.6 笔记本 i5 4G MX110',
+			desc:'全面均衡的国民轻薄本',
+			price:'4199',
+			del:'',
+			flag:{
+				name:'off-flog',
+				content:'新品'
+			},
+			view:{
+			recommend:'拿包裹的心事迫切的，用的都是小米的，自己送给',
+			author:'来自于大婷宝的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc4.jpg',
+			name:'小米笔记本Air 13.3″',
+			desc:'小米笔记本Pro 15.6"',
+			price:'5399',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'召唤神龙',
+			author:'来自于1450685747的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc5.png',
+			name:'米家空气净化器Pro',
+			desc:'米家空气净化器 2S ',
+			price:'1499',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'卧室里的净化器好小，这次买个大的放到客厅里，我米加油',
+			author:'来自于孔繁义的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc6.jpg',
+			name:'米家电水壶',
+			desc:'一杯水，是一家人的安心 ',
+			price:'99',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'外形时尚，容量大，好打理，再也不用担心清理问题，这',
+			author:'来自于精益眼镜的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc7.png',
+			name:'米家LED吸顶灯',
+			desc:'色温亮度可调',
+			price:'399',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'不错 方便好用 调光温馨 有调光 锁定功能',
+			author:'来自于千龙的评价'
+			}
+		},
+		{
+			top:{
+				url:'#',
+				img:'image/elsc8.jpg',
+				name:'小米净水器',
+				price:'1899'
+			},
+			bottom:{
+				url:'#',
+				txt:'浏览更多',
+				tag:'热门',
+				icon:'&#xe615;'
+			}
+		}
+	],
+	[
+		{
+			url:'#',
+			img:'image/elsc1.jpg',
+			name:'小米电视4A 43英寸青春版',
+			desc:'全高清屏/人工智能语音',
+			price:'1499',
+			del:'1699元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'直都想买个小米电视，果然不失望，大爱',
+			author:'来自于1471474629的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc2.jpg',
+			name:'小米电视4C 50英寸',
+			desc:'4K HDR/人工智能语音',
+			price:'1999',
+			del:'2199元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'我一直催货，还不给我发货，我等了一周，买了为了看NBA',
+			author:'来自于的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc3.png',
+			name:'15.6 笔记本 i5 4G MX110',
+			desc:'全面均衡的国民轻薄本',
+			price:'4199',
+			del:'',
+			flag:{
+				name:'off-flog',
+				content:'新品'
+			},
+			view:{
+			recommend:'拿包裹的心事迫切的，用的都是小米的，自己送给',
+			author:'来自于大婷宝的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc4.jpg',
+			name:'小米笔记本Air 13.3″',
+			desc:'小米笔记本Pro 15.6"',
+			price:'5399',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'召唤神龙',
+			author:'来自于1450685747的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc5.png',
+			name:'米家空气净化器Pro',
+			desc:'米家空气净化器 2S ',
+			price:'1499',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'卧室里的净化器好小，这次买个大的放到客厅里，我米加油',
+			author:'来自于孔繁义的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc6.jpg',
+			name:'米家电水壶',
+			desc:'一杯水，是一家人的安心 ',
+			price:'99',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'外形时尚，容量大，好打理，再也不用担心清理问题，这',
+			author:'来自于精益眼镜的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc7.png',
+			name:'米家LED吸顶灯',
+			desc:'色温亮度可调',
+			price:'399',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'不错 方便好用 调光温馨 有调光 锁定功能',
+			author:'来自于千龙的评价'
+			}
+		},
+		{
+			top:{
+				url:'#',
+				img:'image/elsc8.jpg',
+				name:'小米净水器',
+				price:'1899'
+			},
+			bottom:{
+				url:'#',
+				txt:'浏览更多',
+				tag:'热门',
+				icon:'&#xe615;'
+			}
+		}
+	],
+	[
+		{
+			url:'#',
+			img:'image/elsc1.jpg',
+			name:'小米电视4A 43英寸青春版',
+			desc:'全高清屏/人工智能语音',
+			price:'1499',
+			del:'1699元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'直都想买个小米电视，果然不失望，大爱',
+			author:'来自于1471474629的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc2.jpg',
+			name:'小米电视4C 50英寸',
+			desc:'4K HDR/人工智能语音',
+			price:'1999',
+			del:'2199元',
+			flag:{
+				name:'off-flog',
+				content:'减200元'
+			},
+			view:{
+			recommend:'我一直催货，还不给我发货，我等了一周，买了为了看NBA',
+			author:'来自于的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc3.png',
+			name:'15.6 笔记本 i5 4G MX110',
+			desc:'全面均衡的国民轻薄本',
+			price:'4199',
+			del:'',
+			flag:{
+				name:'off-flog',
+				content:'新品'
+			},
+			view:{
+			recommend:'拿包裹的心事迫切的，用的都是小米的，自己送给',
+			author:'来自于大婷宝的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc4.jpg',
+			name:'小米笔记本Air 13.3″',
+			desc:'小米笔记本Pro 15.6"',
+			price:'5399',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'召唤神龙',
+			author:'来自于1450685747的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc5.png',
+			name:'米家空气净化器Pro',
+			desc:'米家空气净化器 2S ',
+			price:'1499',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'卧室里的净化器好小，这次买个大的放到客厅里，我米加油',
+			author:'来自于孔繁义的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc6.jpg',
+			name:'米家电水壶',
+			desc:'一杯水，是一家人的安心 ',
+			price:'99',
+			del:'',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'外形时尚，容量大，好打理，再也不用担心清理问题，这',
+			author:'来自于精益眼镜的评价'
+			}
+		},
+		{
+			url:'#',
+			img:'image/elsc7.png',
+			name:'米家LED吸顶灯',
+			desc:'色温亮度可调',
+			price:'399',
+			// flag:{
+			// 	name:'off-flog',
+			// 	content:'jian800'
+			// },
+			view:{
+			recommend:'不错 方便好用 调光温馨 有调光 锁定功能',
+			author:'来自于千龙的评价'
+			}
+		},
+		{
+			top:{
+				url:'#',
+				img:'image/elsc8.jpg',
+				name:'小米净水器',
+				price:'1899'
+			},
+			bottom:{
+				url:'#',
+				txt:'浏览更多',
+				tag:'热门',
+				icon:'&#xe615;'
+			}
+		}
 	],
 ]
