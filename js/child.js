@@ -1,6 +1,7 @@
 handleCart();
 handleNav();
 handleNav2();
+handleCate();
 
 function handleCart(){
 	var oCart = document.querySelector('.top .cart');
@@ -102,14 +103,68 @@ function handleNav(){
 function handleNav2(){
 	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
 	var aCate = document.querySelector('.header .nav-drop .cate');
-	console.log(aNavItem);
-	console.log(aCate);
+
+	var navTimer = 0;
+	// console.log(aNavItem);
+	// console.log(aCate);
 	for(var i = 0;i<aNavItem.length-10;i++){
-		aNavItem[i].onmouseenter = function(){
-			aCate.style.display = 'block';
-		}
+		// clearTimeout(navTimer)
+			aNavItem[i].onmouseenter = function(){
+				aCate.style.display = 'block';
+				aCate.onmouseenter = function(){
+					aCate.style.display = 'block';
+				}
+		}	
+	
 		aNavItem[i].onmouseleave = function(){
+			clearInterval(navTimer);
 			aCate.style.display = 'none';
+			aCate.onmouseleave = function(){
+					aCate.style.display = 'none';
+				}
 		}
 	}
+}
+
+//分类左拉面板
+function handleCate(){
+	var aCateItem = document.querySelectorAll('.cate .cate-item');
+	var oCateContent = document.querySelector('.nav-drop .cate-content');
+	var oCateBox = document.querySelector('.header .nav-drop');
+	console.log(aCateItem)
+	console.log(oCateContent)
+	console.log(oCateBox)
+	for(var i = 0;i<aCateItem.length;i++){
+		aCateItem[i].index = i;
+		aCateItem[i].onmouseenter = function(){
+			for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item'
+			}
+			oCateContent.style.display = 'block';
+			this.className = 'cate-item active';
+			loadDate(this.index);
+		}
+	}
+	oCateBox.onmouseleave = function(){
+		oCateContent.style.display = 'none';
+		for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item'
+		}
+	}
+	function loadDate(index){
+		var date = aCateItemDate[index];
+		var html = '<ul>'
+		for(var i = 0;i<date.length;i++){
+			html += '<li>'
+			html += 	'<a href="'+date[i].url+'">'
+			html += 		'<img src="'+date[i].img+'" alt="">'
+			html += 		'<span>'+date[i].name+'</span>'
+			html += 	'</a>'
+			html += '</li>'
+		}
+
+		html += '</ul>'
+		oCateContent.innerHTML = html;
+	}
+
 }

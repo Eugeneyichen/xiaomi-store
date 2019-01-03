@@ -1,5 +1,8 @@
 handleCart();
 handleNav();
+handleNav2();
+handleCate();
+handleElecProduct()
 
 function handleCart(){
 	var oCart = document.querySelector('.top .cart');
@@ -32,8 +35,6 @@ function handleCart(){
 		});
 	}
 } 
-
-
 function handleNav(){
 	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
 	var oNavContent = document.querySelector('.header .header-nav-content');
@@ -53,7 +54,7 @@ function handleNav(){
 			var index = this.index;
 			clearInterval(loaderTimer);
 			loaderTimer = setTimeout(function(){
-				console.log(index);
+				// console.log(index);
 				loadDate(index);
 			},500)
 			
@@ -97,14 +98,109 @@ function handleNav(){
 		oNavContentContainer.innerHTML = html;
 	}
 }
+function handleNav2(){
+	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
+	var aCate = document.querySelector('.header .nav-drop .cate');
 
-// <li class="ca-item">手机 电话卡<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">电视 盒子<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">笔记本 平板<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">家电 插线板<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">出行 穿戴<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">智能 路由器<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">电源 配件<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">健康 儿童<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">耳机 音箱<i class="iconfont">&#xe623;</i></li>
-// 									<li class="ca-item">生活 箱包<i class="iconfont">&#xe623;</i></li>
+	var navTimer = 0;
+	// console.log(aNavItem);
+	// console.log(aCate);
+	for(var i = 0;i<aNavItem.length-10;i++){
+		// clearTimeout(navTimer)
+			aNavItem[i].onmouseenter = function(){
+				aCate.style.display = 'block';
+				aCate.onmouseenter = function(){
+					aCate.style.display = 'block';
+				}
+		}	
+	
+		aNavItem[i].onmouseleave = function(){
+			clearInterval(navTimer);
+			aCate.style.display = 'none';
+			aCate.onmouseleave = function(){
+					aCate.style.display = 'none';
+				}
+		}
+	}
+}
+function handleCate(){
+	var aCateItem = document.querySelectorAll('.cate .cate-item');
+	var oCateContent = document.querySelector('.nav-drop .cate-content');
+	var oCateBox = document.querySelector('.header .nav-drop');
+	for(var i = 0;i<aCateItem.length;i++){
+		aCateItem[i].index = i;
+		aCateItem[i].onmouseenter = function(){
+			for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item'
+			}
+			oCateContent.style.display = 'block';
+			this.className = 'cate-item active';
+			loadDate(this.index);
+		}
+	}
+	oCateBox.onmouseleave = function(){
+		oCateContent.style.display = 'none';
+		for(var j = 0;j<aCateItem.length;j++){
+				aCateItem[j].className = 'cate-item'
+		}
+	}
+	function loadDate(index){
+		var date = aCateItemDate[index];
+		var html = '<ul>'
+		for(var i = 0;i<date.length;i++){
+			html += '<li>'
+			html += 	'<a href="'+date[i].url+'">'
+			html += 		'<img src="'+date[i].img+'" alt="">'
+			html += 		'<span>'+date[i].name+'</span>'
+			html += 	'</a>'
+			html += '</li>'
+		}
+
+		html += '</ul>'
+		oCateContent.innerHTML = html;
+	}
+}
+
+function handleElecProduct(){
+	//获取元素
+	var aTabItem = document.querySelectorAll('.home .home-item-m');
+	var oElecProduct = document.querySelectorAll('.home .col1');
+
+			oElecProduct.innerHTML = 18648645645645645645654;
+	console.log(oElecProduct)
+	// loadDate()
+	for(var i = 0;i<aTabItem.length;i++){
+		aTabItem[i].index = i;
+		aTabItem[i].onclick = function(){
+			for(var j = 0;j<aTabItem.length;j++){
+				aTabItem[j].className = 'home-item-m';
+			}
+			this.className = 'home-item-m checked';
+			loadDate(this.index);
+		}
+	}
+	function loadDate(index){
+		var data = aElecItemData[index];
+		var html = '<ul class="product-list">';
+		for(var i = 0;i<data.length;i++){
+			html +=		'<li class="product-item">';
+			html +=			'<a href="'+data[i].url+'">'
+			html +=				'<img src="'+data[i].img+'" alt="" class="product-img">';
+			html +=				'<div class="bg">';
+			html +=					'<p class="product-name ">'+data[i].name+'</p>';
+			html +=					'<p class="product-desc ">'+data[i].desc+'</p>';
+			html +=					'<p class="product-price ">';
+			html +=						'<strong>'+data[i].price+'</strong><span>&nbsp;元</span>';
+			html +=						'<del>'+data[i].del+'</del>';
+			html +=					'</p>';
+			html +=					'<span class="new-flog">'+data[i].flog+'</span>';
+			html +=					'<p class="product-people">'+data[i].people+'</p>';
+			html +=				'</div>';
+			html +=			'</a>';
+			html +=		'</li>';
+		}
+		var html = '</ul>';
+		console.log(oElecProduct)
+		oElecProduct.innerHTML = 1;
+	}
+}
