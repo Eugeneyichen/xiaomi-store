@@ -647,7 +647,7 @@ var aElecItemData = [
 		},
 		{
 			url:'#',
-			img:'image/qg1.png',
+			img:'image/qg2.png',
 			name:'15.6 Pro i5 8G',
 			desc:'更强悍的专业笔记本',
 			price:'5999.00',
