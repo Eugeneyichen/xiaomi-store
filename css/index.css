@@ -787,13 +787,14 @@
 .hd .more-tab .tab-item{
 	float: left;
 	height: 20px;
-	line-height: 20px;
+	line-height: 2px;
 	margin-left: 30px;
-	font-size: 14px;
+	font-size: 16px;
 	cursor: pointer;
 }
 /*.hd .more-tab .tab-item:hover,*/
 .hd .more-tab .tab-item-active{
+	margin-top: 2px;
 	color: #ff6700;
 	border-bottom: 1px solid #ff6700;
 }

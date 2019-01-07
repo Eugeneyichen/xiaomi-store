@@ -2,8 +2,10 @@ handleCart();
 handleNav();
 handleNav2();
 handleCate();
-handleElecProduct()
+handleElecProduct();
+handleCountdown()
 
+//购物车
 function handleCart(){
 	var oCart = document.querySelector('.top .cart');
 	var oCartLink = document.querySelector('.top .cart .cart-box a');
@@ -35,6 +37,7 @@ function handleCart(){
 		});
 	}
 } 
+//下拉菜单
 function handleNav(){
 	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
 	var oNavContent = document.querySelector('.header .header-nav-content');
@@ -98,6 +101,7 @@ function handleNav(){
 		oNavContentContainer.innerHTML = html;
 	}
 }
+//frist下拉菜单
 function handleNav2(){
 	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
 	var aCate = document.querySelector('.header .nav-drop .cate');
@@ -123,6 +127,7 @@ function handleNav2(){
 		}
 	}
 }
+//左拉菜单
 function handleCate(){
 	var aCateItem = document.querySelectorAll('.cate .cate-item');
 	var oCateContent = document.querySelector('.nav-drop .cate-content');
@@ -157,18 +162,42 @@ function handleCate(){
 		}
 
 		html += '</ul>'
+		// console.log(oCateContent)
 		oCateContent.innerHTML = html;
 	}
 }
-
+//倒计时
+function handleCountdown(){
+	var oTimenum = document.querySelector('.home-item-m .buy1');
+	// console.log(oTimenum);
+	var endDate = new Date('2019-1-8 12:12:00');
+	var timer = 0;
+	function to2(num){
+		return	num > 9 ? '' + num : '0' + num ;
+	}
+	function handleTimer(){
+		var endTime = endDate.getTime();
+		var allMinseconds = endTime - Date.now();
+		if(allMinseconds < 0){
+			allMinseconds = 0;
+			clearInterval(timer);
+		}
+		var allseconds = parseInt(allMinseconds / 1000);
+		var iHour = parseInt(allseconds / 3600);
+		var iMinute = parseInt((allseconds % 3600) / 60);
+		var iSecond = (allseconds % 3600) % 60;
+		oTimenum.innerHTML ="距结束 " + to2(iHour) +":"+ to2(iMinute) +":"+ to2(iSecond);		
+	}
+	timer = setInterval(handleTimer,500)
+	handleTimer();
+}
+//选项卡
 function handleElecProduct(){
 	//获取元素
 	var aTabItem = document.querySelectorAll('.home .home-item-m');
-	var oElecProduct = document.querySelectorAll('.home .col1');
-
-			oElecProduct.innerHTML = 18648645645645645645654;
-	console.log(oElecProduct)
-	// loadDate()
+	var oElecProduct = document.querySelectorAll('.home .col1')[0];
+	// console.log(oElecProduct)
+	loadDate(0)
 	for(var i = 0;i<aTabItem.length;i++){
 		aTabItem[i].index = i;
 		aTabItem[i].onclick = function(){
@@ -180,11 +209,13 @@ function handleElecProduct(){
 		}
 	}
 	function loadDate(index){
+		console.log(aElecItemData[index])
 		var data = aElecItemData[index];
+
 		var html = '<ul class="product-list">';
 		for(var i = 0;i<data.length;i++){
 			html +=		'<li class="product-item">';
-			html +=			'<a href="'+data[i].url+'">'
+			html +=			'<a href="'+data[i].url+'">';
 			html +=				'<img src="'+data[i].img+'" alt="" class="product-img">';
 			html +=				'<div class="bg">';
 			html +=					'<p class="product-name ">'+data[i].name+'</p>';
@@ -199,8 +230,9 @@ function handleElecProduct(){
 			html +=			'</a>';
 			html +=		'</li>';
 		}
-		var html = '</ul>';
-		console.log(oElecProduct)
-		oElecProduct.innerHTML = 1;
+		html += '</ul>';
+		
+		oElecProduct.innerHTML = html;
+		console.log(oElecProduct);
 	}
 }

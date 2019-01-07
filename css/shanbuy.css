@@ -457,7 +457,7 @@
 .home-item .home-item-m .buy1{
 	position: relative;
 	top: -13px;
-	left: 52px;
+	left: 42px;
 }
 .home-item .home-item-m a{
 	font-size: 15px;
@@ -487,9 +487,9 @@
 	box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 	transform:translateY(-2px);
 }
-.col1 .product-list{
+/*.col1 .product-list{
 	height: 2000px;
-}
+}*/
 .col1 .product-list .product-item:nth-child(1){
 	margin-left: 0px;
 }
