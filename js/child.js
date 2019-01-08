@@ -2,6 +2,7 @@ handleCart();
 handleNav();
 handleNav2();
 handleCate();
+handleOnTop();
 
 function handleCart(){
 	var oCart = document.querySelector('.top .cart');
@@ -131,9 +132,9 @@ function handleCate(){
 	var aCateItem = document.querySelectorAll('.cate .cate-item');
 	var oCateContent = document.querySelector('.nav-drop .cate-content');
 	var oCateBox = document.querySelector('.header .nav-drop');
-	console.log(aCateItem)
-	console.log(oCateContent)
-	console.log(oCateBox)
+	// console.log(aCateItem)
+	// console.log(oCateContent)
+	// console.log(oCateBox)
 	for(var i = 0;i<aCateItem.length;i++){
 		aCateItem[i].index = i;
 		aCateItem[i].onmouseenter = function(){
@@ -166,5 +167,16 @@ function handleCate(){
 		html += '</ul>'
 		oCateContent.innerHTML = html;
 	}
+}
 
+//回置顶
+function handleOnTop(){
+	var oBox = document.querySelector('.lateral-nav');
+	window.onscroll = function(){
+		if(document.documentElement.scrollTop >= 1000){
+			oBox.style.display = 'block';
+		}else if(document.documentElement.scrollTop < 300){
+			oBox.style.display = 'none';
+		}
+	}
 }

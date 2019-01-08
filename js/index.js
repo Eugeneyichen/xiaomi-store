@@ -6,6 +6,7 @@ handleCate()
 handleCountdown();
 handleFlashProduct();
 handleElecProduct();
+handleOnTop();
 
 
 //购物车
@@ -392,5 +393,16 @@ function handleElecProduct(){
 				html+=				'	<p class="product-re">'+lastData.bottom.tag+'</p>'
 				html+=				'</li>'
 		oElecProduct.innerHTML = html;
+	}
+}
+
+function handleOnTop(){
+	var oBox = document.querySelector('.lateral-nav');
+	window.onscroll = function(){
+		if(document.documentElement.scrollTop >= 1000){
+			oBox.style.display = 'block';
+		}else if(document.documentElement.scrollTop < 300){
+			oBox.style.display = 'none';
+		}
 	}
 }

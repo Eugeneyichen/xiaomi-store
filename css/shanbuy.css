@@ -732,45 +732,67 @@ product-people
 	position: fixed;
 	bottom: 447px;
 	right:0;
-	width: 90px;
-	height: 95px;
+	width: 80px;
+	height: 85px;
 	border:1px solid #f5f5f5;
 	text-align: center;
 	background:#fff;
 }
 .lateral-item-m a{
 	display: inline-block;
-	padding-top: 23px;
+	padding-top: 18px;
 	color: #757575;
 }
 .lateral-item-m a i{
 
-	font-size: 30px;
+	font-size: 28px;
 }
 .lateral-item-m a p{
-	font-size: 15px;
+	font-size: 14px;
 	padding-top: 5px;
 }
 .lateral-item-m:nth-child(2){
 	position: fixed;
 	right: 0;
-	bottom:352px; 
+	bottom:362px; 
 }
 .lateral-item-m:nth-child(3){
 	position: fixed;
 	right: 0;
-	bottom:257px; 
+	bottom:277px; 
 }
 .lateral-item-m:nth-child(4){
 	position: fixed;
 	right: 0;
-	bottom:162px; 
-}
-.lateral-item-m:nth-child(5){
-	position: fixed;
-	right: 0;
-	bottom:57px; 
+	bottom:192px; 
 }
 .lateral-item-m a:hover{
+	color: #ff6700;
+}
+.lateral-nav{
+	position: fixed;
+	right: 0;
+	bottom:90px; 
+	width: 80px;
+	height: 85px;
+	border:1px solid #f5f5f5;
+	text-align: center;
+	background:#fff;
+	display: none;
+}
+.lateral-nav a{
+	display: inline-block;
+	padding-top: 18px;
+	color: #757575;
+}
+.lateral-nav a i{
+
+	font-size: 28px;
+}
+.lateral-nav a p{
+	font-size: 14px;
+	padding-top: 5px;
+}
+.lateral-nav a:hover{
 	color: #ff6700;
 }

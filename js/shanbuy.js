@@ -3,7 +3,8 @@ handleNav();
 handleNav2();
 handleCate();
 handleElecProduct();
-handleCountdown()
+handleCountdown();
+handleOnTop();
 
 //购物车
 function handleCart(){
@@ -234,5 +235,17 @@ function handleElecProduct(){
 		
 		oElecProduct.innerHTML = html;
 		console.log(oElecProduct);
+	}
+}
+
+
+function handleOnTop(){
+	var oBox = document.querySelector('.lateral-nav');
+	window.onscroll = function(){
+		if(document.documentElement.scrollTop >= 1000){
+			oBox.style.display = 'block';
+		}else if(document.documentElement.scrollTop < 300){
+			oBox.style.display = 'none';
+		}
 	}
 }
