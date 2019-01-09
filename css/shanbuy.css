@@ -134,10 +134,27 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-image: url(../image/logo.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	text-indent: -9999em;
+}
+.header .logo a #pic{
+	width: 55px;
+	height: 55px;
+	background-color: #ff6700;
+	overflow: hidden;
+	position: relative;
+}
+.header .logo a #img1{
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	transition: all 0.3s;
+}
+.header .logo a #img2{
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	transition: all 0.3s;
 }
 .header .header-nav{
 	float: left;
@@ -795,4 +812,31 @@ product-people
 }
 .lateral-nav a:hover{
 	color: #ff6700;
+}
+.lateral-footer{
+	position: fixed;
+	right: 85px;
+	bottom:342px; 
+	width: 130px;
+	height: 190px;
+	background-color: #fff;
+	text-align: center;
+	color: #757575;
+	font-size: 14px;
+	box-sizing: border-box;
+	display: none;
+	cursor: pointer;
+	z-index: 1000;
+}
+.lateral-footer img{
+	margin-top: 20px;
+	width: 90px;
+	height: 90px;
+}
+.lateral-footer p{
+	margin-top: 20px;
+}
+.lateral-footer a p{
+	color: #757575;
+	font-size: 14px;
 }

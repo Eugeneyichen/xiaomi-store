@@ -1164,3 +1164,30 @@
 .lateral-nav a:hover{
 	color: #ff6700;
 }
+.lateral-footer{
+	position: fixed;
+	right: 85px;
+	bottom:342px; 
+	width: 130px;
+	height: 190px;
+	background-color: #fff;
+	text-align: center;
+	color: #757575;
+	font-size: 14px;
+	box-sizing: border-box;
+	display: none;
+	cursor: pointer;
+	z-index: 1000;
+}
+.lateral-footer img{
+	margin-top: 20px;
+	width: 90px;
+	height: 90px;
+}
+.lateral-footer p{
+	margin-top: 20px;
+}
+.lateral-footer a p{
+	color: #757575;
+	font-size: 14px;
+}

@@ -5,6 +5,8 @@ handleCate();
 handleElecProduct();
 handleCountdown();
 handleOnTop();
+handleTwo();
+handleLogo();
 
 //购物车
 function handleCart(){
@@ -128,6 +130,24 @@ function handleNav2(){
 		}
 	}
 }
+
+
+//logo
+function handleLogo(){
+	var oPic = document.getElementById('pic')
+	var oImg1 = document.getElementById('img1')
+	var oImg2 = document.getElementById('img2')
+	oPic.onmouseenter = function(){
+		oImg1.style.left = '55px';
+		oImg2.style.left = '0px';
+		// oImg2.style.display = 'block';
+	}
+	oPic.onmouseleave = function(){
+		// oImg1.style.display = 'block';
+		oImg1.style.left = '0px';
+		oImg2.style.left = '-55px';
+	}
+}
 //左拉菜单
 function handleCate(){
 	var aCateItem = document.querySelectorAll('.cate .cate-item');
@@ -247,5 +267,25 @@ function handleOnTop(){
 		}else if(document.documentElement.scrollTop < 300){
 			oBox.style.display = 'none';
 		}
+	}
+}
+
+//显示二维码
+function handleTwo(){
+	var oItemFooter = document.getElementById('item-footer');
+	var oLateralFooter = document.querySelector('.lateral-footer');
+	var lateralTimer = 0;
+	// console.log(oLateralFooter)
+	oItemFooter.onmouseenter = function(){
+		oLateralFooter.style.display = 'block';
+		oLateralFooter.onmouseenter = function(){
+			oLateralFooter.style.display = 'block';
+		}
+		oLateralFooter.onmouseleave = function(){
+			oLateralFooter.style.display = 'none';
+		}
+	}
+	oItemFooter.onmouseleave = function(){
+			oLateralFooter.style.display = 'none';	
 	}
 }
