@@ -152,7 +152,7 @@
 .header .logo a #img2{
 	float: left;
 	position: absolute;
-	left: 0px;
+	left: -55px;
 	top: 0;
 	transition: all 0.3s;
 }
