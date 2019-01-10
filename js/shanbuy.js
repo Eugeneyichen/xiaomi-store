@@ -110,17 +110,13 @@ function handleNav2(){
 	var aCate = document.querySelector('.header .nav-drop .cate');
 
 	var navTimer = 0;
-	// console.log(aNavItem);
-	// console.log(aCate);
 	for(var i = 0;i<aNavItem.length-10;i++){
-		// clearTimeout(navTimer)
 			aNavItem[i].onmouseenter = function(){
 				aCate.style.display = 'block';
 				aCate.onmouseenter = function(){
 					aCate.style.display = 'block';
 				}
 		}	
-	
 		aNavItem[i].onmouseleave = function(){
 			clearInterval(navTimer);
 			aCate.style.display = 'none';
