@@ -6,6 +6,7 @@ handleOnTop();
 handleTwo();
 handleLogo();
 
+//购物车
 function handleCart(){
 	var oCart = document.querySelector('.top .cart');
 	var oCartLink = document.querySelector('.top .cart .cart-box a');
@@ -38,7 +39,7 @@ function handleCart(){
 	}
 } 
 
-
+//下拉菜单
 function handleNav(){
 	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
 	var oNavContent = document.querySelector('.header .header-nav-content');
@@ -102,16 +103,13 @@ function handleNav(){
 		oNavContentContainer.innerHTML = html;
 	}
 }
-
+//frist下拉菜单
 function handleNav2(){
 	var aNavItem = document.querySelectorAll('.header .header-nav .header-nav-item');
 	var aCate = document.querySelector('.header .nav-drop .cate');
 
 	var navTimer = 0;
-	// console.log(aNavItem);
-	// console.log(aCate);
 	for(var i = 0;i<aNavItem.length-10;i++){
-		// clearTimeout(navTimer)
 			aNavItem[i].onmouseenter = function(){
 				aCate.style.display = 'block';
 				aCate.onmouseenter = function(){
@@ -150,9 +148,6 @@ function handleCate(){
 	var aCateItem = document.querySelectorAll('.cate .cate-item');
 	var oCateContent = document.querySelector('.nav-drop .cate-content');
 	var oCateBox = document.querySelector('.header .nav-drop');
-	// console.log(aCateItem)
-	// console.log(oCateContent)
-	// console.log(oCateBox)
 	for(var i = 0;i<aCateItem.length;i++){
 		aCateItem[i].index = i;
 		aCateItem[i].onmouseenter = function(){
