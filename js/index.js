@@ -6,6 +6,8 @@ handleCate()
 handleCountdown();
 handleFlashProduct();
 handleElecProduct();
+handleOnTop();
+handleTwo();
 
 
 //购物车
@@ -392,5 +394,36 @@ function handleElecProduct(){
 				html+=				'	<p class="product-re">'+lastData.bottom.tag+'</p>'
 				html+=				'</li>'
 		oElecProduct.innerHTML = html;
+	}
+}
+
+function handleOnTop(){
+	var oBox = document.querySelector('.lateral-nav');
+	window.onscroll = function(){
+		if(document.documentElement.scrollTop >= 1000){
+			oBox.style.display = 'block';
+		}else if(document.documentElement.scrollTop < 300){
+			oBox.style.display = 'none';
+		}
+	}
+}
+
+//显示二维码
+function handleTwo(){
+	var oItemFooter = document.getElementById('item-footer');
+	var oLateralFooter = document.querySelector('.lateral-footer');
+	var lateralTimer = 0;
+	// console.log(oLateralFooter)
+	oItemFooter.onmouseenter = function(){
+		oLateralFooter.style.display = 'block';
+		oLateralFooter.onmouseenter = function(){
+			oLateralFooter.style.display = 'block';
+		}
+		oLateralFooter.onmouseleave = function(){
+			oLateralFooter.style.display = 'none';
+		}
+	}
+	oItemFooter.onmouseleave = function(){
+			oLateralFooter.style.display = 'none';	
 	}
 }
