@@ -292,7 +292,7 @@ function handleCate(){
 //倒计时
 function handleCountdown(){
 	var oTimenum = document.querySelectorAll('.flash .timer-num');
-	var endDate = new Date('2018-12-30 12:12:00');
+	var endDate = new Date('2019-1-18 12:12:00');
 	var timer = 0;
 	function to2(num){
 		return	num > 9 ? '' + num : '0' + num ;
