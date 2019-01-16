@@ -18,7 +18,7 @@
 			<nav class="top-nav">
 				<ul class="left-ul">
 					<li class="left-ul-li">
-						<a href="#" class="left-ul-li-a">小米商城</a>
+						<a href="index.html" class="left-ul-li-a">小米商城</a>
 						<span>&nbsp;|&nbsp;</span>
 					</li>
 					<li class="left-ul-li">
@@ -79,29 +79,50 @@
 	<header class="header">
 		<div class="continer clearfix">
 			<h1 class="header-logo">
-				<a href="#">小米官网
-				</a></h1>	
+					<div class="header-logo-div">
+							<img  id="logo3" src="images/logo3.png" alt="">
+							<img id="logo2" src="images/logo2.png" alt="">
+					</div>
+			</h1>	
 			<div class="header-nav clearfix">
 				<ul class="header-nav-ul clearfix">
 					<li class="header-nav-ul-li">
 						<a href="#" class="header-nav-ul-li-a" id="header-nav-ul-li-a">全部商品分类</a>
 						<ul class="header-nav-ul-2 header-nav-uls" id="header-nav-ul-2">
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">手机 电话卡<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">电视 盒子<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">笔记本 平板<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">家电 插线板<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">出行 穿戴<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">智能 路由器<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">电源 配件<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">健康 儿童<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">耳机 音响<i class="iconfont">&#xe623</i></a></li>
-							<li class="list-ul-li"><a href="#" class="list-ul-li-a">生活 箱包<i class="iconfont">&#xe623</i></a></li></ul></a>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">手机 电话卡<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">电视 盒子<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">笔记本 平板<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">家电 插线板<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">出行 穿戴<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">智能 路由器<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">电源 配件<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="child.html" class="list-ul-li-a">健康 儿童<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">耳机 音响<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+							<li class="list-ul-li"><a href="#" class="list-ul-li-a">生活 箱包<i class="iconfont">&#xe623</i></a>
+								<div class="contentli"></div>
+							</li>
+						</ul>
 					</li>
 					<li class="header-nav-ul-li">
 						<a href="#" class="header-nav-ul-li-a" id="header-nav-ul-li-a2">小米手机</a>
-						<div class="header-nav-ul-3 header-nav-uls" id="header-nav-ul-3">
-							<span class="loader"></span>
-						</div>
 					</li>
 					<li class="header-nav-ul-li">
 						<a href="#" class="header-nav-ul-li-a" id="header-nav-ul-li-a3">红米</a>
@@ -131,6 +152,8 @@
 						<a href="#" class="header-nav-ul-li-a">社区</a>
 					</li>
 				</ul>
+				<div class="header-nav-ul-3 header-nav-uls" id="header-nav-ul-3">
+				</div>
 			</div>
 			<div class="header-sec">
 				<input type="text" name="" class="sec-text">
@@ -598,514 +621,6 @@
 	</section>
 </body>
 <script src="js/051jsTBfz.js" type="text/javascript"></script>
-<script type="text/javascript">
-//购物车
-	var oTcat = document.querySelector('.top-car')
-	var oCat = document.querySelector('.car-a')
-	var oContent = document.querySelector('.cart-content')
-	var oLoder= document.querySelector('.loader')
-	var oTxt= document.querySelector('.txt')
-
-	oTcat.onmouseenter = function(){
-		oCat.style.color = '#ff6700';
-		oCat.style.background = '#fff';
-		oLoder.style.display = 'block';
-		sssss(oContent,{height:100},1,function(){
-			oLoder.style.display = 'none';
-			oTxt.style.display = 'block';
-		});
-	}
-	oTcat.onmouseleave = function(){
-		oCat.style.color = '#b0b0b0';
-		oCat.style.background = '#424242';
-		sssss(oContent,{height:0},1);
-		oLoder.style.display = 'none';
-		oTxt.style.display = 'none';
-	}
-	//商品分类选项卡
-	var aAtn = [
-		[
-			{
-				url:'#',
-				img:'images/mix3-320.png',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/mix3-320.png',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/mix3-320.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/mix3-320.png',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/mix3-320.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/mix3-320.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//小米手机
-		[
-			{
-				url:'#',
-				img:'images/p2.jpg',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/p2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/p2.jpg',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/p2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/p2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/p2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//红米
-		[
-			{
-				url:'#',
-				img:'images/f2.jpg',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f2.jpg',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f2.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//电视
-		[
-			{
-				url:'#',
-				img:'images/f3.png',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f3.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f4.jpg',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f3.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f4.jpg',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f3.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//笔记本
-		[
-			{
-				url:'#',
-				img:'images/f5.png',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f5.png',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f5.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f5.png',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f5.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f5.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//空调
-		[
-			{
-				url:'#',
-				img:'images/f6.jpg',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f6.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f6.jpg',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f6.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/f6.jpg',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/f6.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//新品
-		[
-			{
-				url:'#',
-				img:'images/4Q.png',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/4Q.png',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/4Q.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/4Q.png',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/4Q.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/4Q.png',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		],//路由器
-		[
-			{
-				url:'#',
-				img:'images/xiaomijingshuiqi.jpg',
-				name:'小米MX 2',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/xiaomijingshuiqi.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/xiaomijingshuiqi.jpg',
-				name:'小米MX 2',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/xiaomijingshuiqi.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-			{
-				url:'#',
-				img:'images/xiaomijingshuiqi.jpg',
-				name:'小米MX 3',
-				price:'3299',
-			},
-			{
-				url:'#',
-				img:'images/xiaomijingshuiqi.jpg',
-				name:'小米MX 3',
-				price:'3299',
-				tag:'新品'
-			},
-		]//智能硬件
-	];
-	var oAtn = document.querySelectorAll('.header-nav-ul-li')
-	var oAtn2= document.querySelector('#header-nav-ul-2')
-	var oAtn4= document.querySelector('#header-nav-ul-3')
-
-	for(var i=1;i<oAtn.length-2;i++){
-		oAtn[i].index = i;
-		oAtn[i].onmouseenter = function(){
-			oAtn4.style.borderTop = '1px splid #ccc';
-			oLoder.style.display = 'block';
-			oAtn4.style.display='block';
-			sssss(oAtn4,{height:230},1,function(){
-				oLoder.style.display = 'none';
-				oAtn4.style.overflow = 'visible';
-			});
-			loadData(this.index);
-		}
-		oAtn[i].onmouseleave = function(){
-			oAtn4.style.overflow = 'hidden';
-			sssss(oAtn4,{height:0},1,function(){
-				oLoder.style.display = 'none';
-				oAtn4.style.display='none';
-				oAtn4.style.borderTop = 'none';
-			});
-		}
-	}
-	/*
-							<li class="header-nav-ul-3-li">
-								<a href="#" class="clearfix">
-									<img src="images/mix3-320.png" alt="">
-								</a>
-								<a href="#">
-									<p>小米MIX 3</p>
-								</a>
-								<span>3299元起</span>
-							</li>
-
-
-
-
-
-	 */
-	function loadData(index){
-		var data = aAtn[index-1];
-		var html = '<ul>';
-		for(var i = 0;i<data.length;i++){
-		html +=		'			<li class="header-nav-ul-3-li">'
-		html +=		'				<a href="'+data[i].url+'" class="clearfix">'
-		html +=		'					<img src="'+data[i].img+'" alt="">'
-		html +=		'				</a>'
-		html +=		'				<a href="#">'
-		html +=		'					<p>'+data[i].name+'</p>'
-		html +=		'				</a>'
-		html +=		'				<span>'+data[i].price+'元起</span>'
-		if(data[i].tag){
-			html +=     '    			<span class="xinpin">'+data[i].tag+'</span>' 
-			
-		}
-		html +=		'			</li>'
-	
-		}
-		html +='</ul>';
-		oAtn4.innerHTML = html;
-
-	}
-	var tt1=0;
-	oAtn[0].onmouseenter=function(){
-		oAtn2.style.display='block';
-	}
-		clearTimeout(tt1);
-	oAtn[0].onmouseleave=function(){
-		oAtn2.style.display='none';
-	}
-
-	//轮播图
-	var oHomeb= document.querySelector('.homeb')
-	var oImg = document.querySelectorAll('.am-lb-i')
-	var oLrow = document.querySelector('.left-aarow')
-	var oRrow = document.querySelector('.right-aarow')
-	var oArow = document.querySelector('.main-ul1-1')
-	var oAarow = oArow.children;
-	var neww=0;
-	var timer=0;
-	function aaa(){
-		for(var i=0;i<oImg.length;i++){
-			oImg[i].style.display='none';
-			oImg[i].style.opacity=0.5;
-			oAarow[i].style.borderColor='gray';
-		}
-		sssss(oImg[neww],{opacity:100},0);
-		oImg[neww].style.display='block'
-		oAarow[neww].style.borderColor='white';
-	}
-		oAarow[neww].style.borderColor='white';
-	oLrow.onclick =function(){
-		clearInterval(timer);
-		neww--;
-		if(neww<0){
-			neww=oImg.length-1;
-		}
-		aaa()
-	}
-	oRrow.onclick =function(){
-		clearInterval(timer);
-		neww++;
-		if(neww>=3){
-			neww=0;
-		}
-		aaa()
-	}
-	for(var i=0;i<oAarow.length;i++){
-		oAarow[i].index = i;
-		oAarow[i].onclick=function(){
-			neww = this.index;
-			clearInterval(timer);
-			aaa();
-		}
-	}
-	timer = setInterval(function(){
-		neww++;
-		if(neww>=3){
-			neww=0;
-		}
-		aaa()
-	},3000)
-
-	//小米MIX3定位
-	window.onscroll = function(){
-		if(document.documentElement.scrollTop>=140){
-			sssss(oHomeb,{height:65})
-			oHomeb.style.display='block';
-		}else{
-			sssss(oHomeb,{height:0},1,function(){
-			oHomeb.style.display='none';	
-			})
-		}
-	}
-
-
-
-
-
-
-
-
-	//商品分类选项卡
-
-</script>
+<script src="js/file.js" type="text/javascript"></script>
+<script src="js/mix3.js" type="text/javascript"></script>
 </html>

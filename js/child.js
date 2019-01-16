@@ -146,7 +146,7 @@ function handleLogo(){
 //分类左拉面板
 function handleCate(){
 	var aCateItem = document.querySelectorAll('.cate .cate-item');
-	var oCateContent = document.querySelector('.nav-drop .cate-content');
+	var oCateContent = document.querySelectorAll('.nav-drop .cate-content');
 	var oCateBox = document.querySelector('.header .nav-drop');
 	for(var i = 0;i<aCateItem.length;i++){
 		aCateItem[i].index = i;
@@ -154,17 +154,18 @@ function handleCate(){
 			for(var j = 0;j<aCateItem.length;j++){
 				aCateItem[j].className = 'cate-item'
 			}
-			oCateContent.style.display = 'block';
+			oCateContent[this.index].style.display = 'block';
 			this.className = 'cate-item active';
 			loadDate(this.index);
-		}
-	}
-	oCateBox.onmouseleave = function(){
-		oCateContent.style.display = 'none';
-		for(var j = 0;j<aCateItem.length;j++){
+			oCateBox.onmouseleave = function(){
+				for(var j = 0;j<aCateItem.length;j++){
+				oCateContent[j].style.display = 'none';
 				aCateItem[j].className = 'cate-item'
-		}
+				}
+			}
+		}	
 	}
+	
 	function loadDate(index){
 		var date = aCateItemDate[index];
 		var html = '<ul>'
@@ -178,7 +179,8 @@ function handleCate(){
 		}
 
 		html += '</ul>'
-		oCateContent.innerHTML = html;
+		// console.log(oCateContent)
+		oCateContent[index].innerHTML = html;
 	}
 }
 
