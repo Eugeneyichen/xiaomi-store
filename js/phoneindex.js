@@ -185,7 +185,7 @@ function handleCate(){
 function handleCarousel(){
 	new Carousel({
 		id:'carousel',
-		aImg:['新建文件夹(2)/545a5b5f0cb6cff72c8abc13968a0adf(1).jpg','新建文件夹(2)/e56e83596263a461406da48e8786fc31(1).jpg'],
+		aImg:['C:/Users/liyuphp/xiaomi-store/images/e56e83596263a461406da48e8786fc31.jpg','C:/Users/liyuphp/xiaomi-store/images/e56e83596263a461406da48e8786fc31.jpg'],
 		width:1576,
 		height:640,
 		playDuration:1000
