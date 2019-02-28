@@ -185,7 +185,7 @@ function handleCate(){
 function handleCarousel(){
 	new Carousel({
 		id:'carousel',
-		aImg:['C:/Users/liyuphp/xiaomi-store/images/e56e83596263a461406da48e8786fc31.jpg','C:/Users/liyuphp/xiaomi-store/images/e56e83596263a461406da48e8786fc31.jpg'],
+		aImg:['images/e56e83596263a461406da48e8786fc31.jpg','images/e56e83596263a461406da48e8786fc31.jpg'],
 		width:1576,
 		height:640,
 		playDuration:1000
