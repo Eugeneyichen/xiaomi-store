@@ -292,7 +292,7 @@ function handleCate(){
 //倒计时
 function handleCountdown(){
 	var oTimenum = document.querySelectorAll('.flash .timer-num');
-	var endDate = new Date('2019-1-18 12:12:00');
+	var endDate = new Date('2019-5-30 12:30:00');
 	var timer = 0;
 	function to2(num){
 		return	num > 9 ? '' + num : '0' + num ;
@@ -427,3 +427,23 @@ function handleTwo(){
 			oLateralFooter.style.display = 'none';	
 	}
 }
+/*
+function handleTwo(){
+	var oItemFooter = document.getElementById('item-footer');
+	var oLateralFooter = document.querySelector('.lateral-footer');
+	var lateralTimer = 0;
+	// console.log(oLateralFooter)
+	oItemFooter.onmouseenter = function(){
+		oLateralFooter.style.display = 'block';
+		oLateralFooter.onmouseenter = function(){
+			oLateralFooter.style.display = 'block';
+		}
+		oLateralFooter.onmouseleave = function(){
+			oLateralFooter.style.display = 'none';
+		}
+	}
+	oItemFooter.onmouseleave = function(){
+			oLateralFooter.style.display = 'none';	
+	}
+}
+*/
